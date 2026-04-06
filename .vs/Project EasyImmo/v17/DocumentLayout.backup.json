@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{12B2EF81-D7DD-46D9-86BE-A423694089CF}|ImmoApp.DataAccess\\ImmoApp.DataAccess.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoapp.dataaccess\\models\\immodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B2EF81-D7DD-46D9-86BE-A423694089CF}|ImmoApp.DataAccess\\ImmoApp.DataAccess.csproj|solutionrelative:immoapp.dataaccess\\models\\immodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{465333EF-904E-4BE7-9EBB-D86C519546B2}|ImmoApp.TestConsole\\ImmoApp.TestConsole.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoapp.testconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{465333EF-904E-4BE7-9EBB-D86C519546B2}|ImmoApp.TestConsole\\ImmoApp.TestConsole.csproj|solutionrelative:immoapp.testconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ImmoDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoApp.DataAccess\\Models\\ImmoDbContext.cs",
+              "RelativeDocumentMoniker": "ImmoApp.DataAccess\\Models\\ImmoDbContext.cs",
+              "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoApp.DataAccess\\Models\\ImmoDbContext.cs",
+              "RelativeToolTip": "ImmoApp.DataAccess\\Models\\ImmoDbContext.cs",
+              "ViewState": "AgIAACMBAAAAAAAAAAAswEoBAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T06:27:31.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoApp.TestConsole\\Program.cs",
               "RelativeDocumentMoniker": "ImmoApp.TestConsole\\Program.cs",
               "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoApp.TestConsole\\Program.cs",
               "RelativeToolTip": "ImmoApp.TestConsole\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-13T10:04:05.239Z",
               "EditorCaption": ""

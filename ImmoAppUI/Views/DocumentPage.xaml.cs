@@ -13,7 +13,7 @@ public partial class DocumentPage : ContentPage
 
     private async void OnClientsTapped(object sender, TappedEventArgs e)
     {
-        await Shell.Current.GoToAsync("//ClientsPage");
+        await Navigation.PushAsync(new ClientsListPage());
     }
 
     private async void OnDocumentsTapped(object sender, TappedEventArgs e)

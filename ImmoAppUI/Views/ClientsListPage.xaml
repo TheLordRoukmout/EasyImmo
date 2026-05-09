@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImmoAppUI.Views.ClientsListPage"
+             Title="ClientsListPage">
+
+    <Grid RowDefinitions="Auto, *, Auto" Padding="20" RowSpacing="15">
+
+        <!-- Titre -->
+        <Label Grid.Row="0" Text="Liste des clients" 
+            FontSize="24" FontAttributes="Bold"/>
+
+        <!-- Tableau pour les clients -->
+        <!-- La CollectionView est branchée sur la liste du ViewModel via Binding -->
+        <VerticalStackLayout Grid.Row="1">
+            <Grid ColumnDefinitions="150, 150, 200, 120, 200, 120, Auto, Auto" BackgroundColor="#42A5F5" Padding="10">
+                <Label Grid.Column="0" Text="Prénom" TextColor="White" FontAttributes="Bold"/>
+                <Label Grid.Column="1" Text="Nom" TextColor="White" FontAttributes="Bold"/>
+                <Label Grid.Column="2" Text="Email" TextColor="White" FontAttributes="Bold"/>
+                <Label Grid.Column="3" Text="Téléphone" TextColor="White" FontAttributes="Bold"/>
+                <Label Grid.Column="4" Text="Adresse" TextColor="White" FontAttributes="Bold"/>
+                <Label Grid.Column="5" Text="Type" TextColor="White" FontAttributes="Bold"/>
+                <Label Grid.Column="6" Text="Action" TextColor="White" FontAttributes="Bold"/>
+                <Label Grid.Column="7" Text="" TextColor="White" FontAttributes="Bold"/>
+            </Grid>
+            
+            <!-- Liste des clients -->
+            <CollectionView ItemsSource="{Binding Clients}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="150, 150, 200, 120, 200, 120, Auto, Auto" Padding="10">
+                            <Label Grid.Column="0" Text="{Binding Firstname}"/>
+                            <Label Grid.Column="1" Text="{Binding Lastname}"/>
+                            <Label Grid.Column="2" Text="{Binding Email}"/>
+                            <Label Grid.Column="3" Text="{Binding Phones}"/>
+                            <Label Grid.Column="4" Text="{Binding Address}"/>
+                            <Label Grid.Column="5" Text="{Binding TypeClient}"/>
+                            <Button Grid.Column="6" Text="Supprimer"
+                                BackgroundColor="#EF5350"
+                                TextColor="White"
+                                CommandParameter="{Binding IdClient}"
+                                Clicked="OnDeleteClientClicked"/>
+                            <Button Grid.Column="7" Text="Modifier"
+                                BackgroundColor="#42A5F5"
+                                TextColor="White"
+                                CommandParameter="{Binding IdClient}"
+                                Clicked="OnEditClientClicked"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+
+        <!-- Bouton d'ajout -->
+        <Button Grid.Row="2" Text="Ajouter un client" BackgroundColor="#42A5F5" TextColor="White" Clicked="OnAddClientClicked"/>
+
+    </Grid>
+
+</ContentPage>

@@ -13,7 +13,7 @@ namespace ImmoAppUI.ViewModels
     {
         private readonly AgentService _agentService;
 
-        private ObservableCollection<Agent> _agents;
+        private ObservableCollection<Agent> _agents = new ObservableCollection<Agent>();
         public ObservableCollection<Agent> Agents
         {
             get => _agents;

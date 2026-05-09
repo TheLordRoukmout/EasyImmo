@@ -7,27 +7,21 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
 
-            <!-- Username -->
             <Label Text="Username" FontAttributes="Bold"/>
             <Entry x:Name="UsernameEntry" Placeholder="Entrez le username"/>
 
-            <!-- Mot de passe -->
             <Label Text="Mot de passe" FontAttributes="Bold"/>
             <Entry x:Name="PasswordEntry" Placeholder="Entrez le mot de passe" IsPassword="True"/>
 
-            <!-- Email -->
             <Label Text="Email" FontAttributes="Bold"/>
             <Entry x:Name="EmailEntry" Placeholder="Entrez l'email" Keyboard="Email"/>
 
-            <!-- Téléphone -->
             <Label Text="Téléphone" FontAttributes="Bold"/>
             <Entry x:Name="PhoneEntry" Placeholder="Entrez le téléphone" Keyboard="Telephone"/>
 
-            <!-- Date d'engagement -->
             <Label Text="Date d'engagement" FontAttributes="Bold"/>
             <DatePicker x:Name="HireDatePicker"/>
 
-            <!-- Bouton -->
             <Button Text="Créer l'agent"
                     BackgroundColor="#42A5F5"
                     TextColor="White"

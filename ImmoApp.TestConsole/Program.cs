@@ -86,6 +86,28 @@ namespace ImmoApp.TestConsole
             //{
             //    Console.WriteLine($"ID: {agent.IdAgent} - {agent.IdUserNavigation.Username}");
             //}
+
+
+
+            /*var clientService = new ClientService();
+            clientService.AddClient("Bourgaux", "Nicolas", "nico@test.com", "0489562412", "Chaussée de louvain 440", "Acheteur");
+            Console.WriteLine("Client créer avec succès !");*/
+
+            //var clientService = new ClientService();
+/*            var clients = clientService.GetAllClients();
+            foreach (var client in clients)
+            {
+                Console.WriteLine($"ID: {client.IdClient} - {client.Firstname} {client.Lastname}");
+            }*/
+
+            /*            clientService.DeleteClient(6);
+                        Console.WriteLine("Client supprimé avec succès !");*/
+
+
+/*            clientService.UpdateClient(5, "LastNameTestUpdate", "FirstNameUpdate", "Test@update.com", "047521263", "Chaussée du test update", "Acheteur");*/
+
+
+
         }
     }
 

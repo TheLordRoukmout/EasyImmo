@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImmoAppUI.Views.EditClientPage"
+             Title="Modifier un client">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Lastname" FontAttributes="Bold"/>
+            <Entry x:Name="LastnameEntry" Placeholder="Nom de famille"/>
+            <Label Text="Firstname" FontAttributes="Bold"/>
+            <Entry x:Name="FirstnameEntry" Placeholder="Prénom"/>
+            <Label Text="Email" FontAttributes="Bold"/>
+            <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email"/>
+            <Label Text="Phone" FontAttributes="Bold"/>
+            <Entry x:Name="PhoneEntry" Placeholder="Téléphone" Keyboard="Telephone"/>
+            <Label Text="Address" FontAttributes="Bold"/>
+            <Entry x:Name="AddressEntry" Placeholder="Adresse"/>
+            <Label Text="TypeClient" FontAttributes="Bold"/>
+            <Entry x:Name="TypeClientEntry" Placeholder="Type client"/>
+            <Button Text="Modifier le client"
+                    BackgroundColor="#42A5F5"
+                    TextColor="White"
+                    Clicked="OnUpdateClientClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

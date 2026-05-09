@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImmoAppUI.Views.AgentsListPage"
+             Title="AgentsListPage">
+
+    <Grid RowDefinitions="Auto, *, Auto" Padding="20" RowSpacing="15">
+
+        <!-- Titre -->
+        <Label Grid.Row="0" Text="Liste des agents" 
+               FontSize="24" FontAttributes="Bold"/>
+
+        <!-- Liste des agents -->
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Agents}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border BackgroundColor="#E3F2FD" 
+                            StrokeShape="RoundRectangle 10"
+                            Margin="0,5" Padding="15">
+                        <Grid ColumnDefinitions="*, Auto">
+                            <VerticalStackLayout Grid.Column="0">
+                                <Label Text="{Binding IdUserNavigation.Username}" 
+                                       FontAttributes="Bold" FontSize="16"/>
+                                <Label Text="{Binding HireDate}" 
+                                       FontSize="12"/>
+                            </VerticalStackLayout>
+                            <Button Grid.Column="1" Text="Supprimer" 
+                                    BackgroundColor="#EF5350"
+                                    TextColor="White"
+                                    CommandParameter="{Binding IdAgent}"
+                                    Clicked="OnDeleteAgentClicked"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Bouton Ajouter -->
+        <Button Grid.Row="2" Text="+ Ajouter un agent"
+                BackgroundColor="#42A5F5"
+                TextColor="White"
+                Clicked="OnAddAgentClicked"/>
+
+    </Grid>
+
+</ContentPage>

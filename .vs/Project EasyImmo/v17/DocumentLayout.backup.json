@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12B2EF81-D7DD-46D9-86BE-A423694089CF}|ImmoApp.DataAccess\\ImmoApp.DataAccess.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoapp.dataaccess\\models\\immodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12B2EF81-D7DD-46D9-86BE-A423694089CF}|ImmoApp.DataAccess\\ImmoApp.DataAccess.csproj|solutionrelative:immoapp.dataaccess\\models\\immodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoappui\\views\\addagentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|solutionrelative:immoappui\\views\\addagentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoappui\\views\\addagentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|solutionrelative:immoappui\\views\\addagentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoappui\\views\\agentslistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|solutionrelative:immoappui\\views\\agentslistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoappui\\views\\agentslistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|solutionrelative:immoappui\\views\\agentslistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoappui\\views\\documentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|solutionrelative:immoappui\\views\\documentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoappui\\views\\documentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|solutionrelative:immoappui\\views\\documentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoappui\\viewmodels\\agentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|solutionrelative:immoappui\\viewmodels\\agentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE86D69-1FA7-408A-A236-795D9489167F}|ImmoApp.BLL\\ImmoApp.BLL.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoapp.bll\\services\\agentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE86D69-1FA7-408A-A236-795D9489167F}|ImmoApp.BLL\\ImmoApp.BLL.csproj|solutionrelative:immoapp.bll\\services\\agentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{465333EF-904E-4BE7-9EBB-D86C519546B2}|ImmoApp.TestConsole\\ImmoApp.TestConsole.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoapp.testconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{465333EF-904E-4BE7-9EBB-D86C519546B2}|ImmoApp.TestConsole\\ImmoApp.TestConsole.csproj|solutionrelative:immoapp.testconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|c:\\users\\dymit\\documents\\esa_prj\\pgbd\\project easyimmo\\immoappui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{58E9F323-26D0-4D4E-8DDE-78F6C3893423}|ImmoAppUI\\ImmoAppUI.csproj|solutionrelative:immoappui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +55,131 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ImmoDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoApp.DataAccess\\Models\\ImmoDbContext.cs",
-              "RelativeDocumentMoniker": "ImmoApp.DataAccess\\Models\\ImmoDbContext.cs",
-              "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoApp.DataAccess\\Models\\ImmoDbContext.cs",
-              "RelativeToolTip": "ImmoApp.DataAccess\\Models\\ImmoDbContext.cs",
-              "ViewState": "AgIAACMBAAAAAAAAAAAswEoBAAAtAAAAAAAAAA==",
+              "Title": "AddAgentPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\Views\\AddAgentPage.xaml.cs",
+              "RelativeDocumentMoniker": "ImmoAppUI\\Views\\AddAgentPage.xaml.cs",
+              "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\Views\\AddAgentPage.xaml.cs",
+              "RelativeToolTip": "ImmoAppUI\\Views\\AddAgentPage.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T06:27:31.922Z",
+              "WhenOpened": "2026-04-19T20:23:57.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AddAgentPage.xaml",
+              "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\Views\\AddAgentPage.xaml",
+              "RelativeDocumentMoniker": "ImmoAppUI\\Views\\AddAgentPage.xaml",
+              "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\Views\\AddAgentPage.xaml",
+              "RelativeToolTip": "ImmoAppUI\\Views\\AddAgentPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-19T20:23:26.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AgentsListPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\Views\\AgentsListPage.xaml.cs",
+              "RelativeDocumentMoniker": "ImmoAppUI\\Views\\AgentsListPage.xaml.cs",
+              "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\Views\\AgentsListPage.xaml.cs",
+              "RelativeToolTip": "ImmoAppUI\\Views\\AgentsListPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T20:20:11.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AgentsListPage.xaml",
+              "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\Views\\AgentsListPage.xaml",
+              "RelativeDocumentMoniker": "ImmoAppUI\\Views\\AgentsListPage.xaml",
+              "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\Views\\AgentsListPage.xaml",
+              "RelativeToolTip": "ImmoAppUI\\Views\\AgentsListPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-19T20:15:56.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DocumentPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\Views\\DocumentPage.xaml.cs",
+              "RelativeDocumentMoniker": "ImmoAppUI\\Views\\DocumentPage.xaml.cs",
+              "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\Views\\DocumentPage.xaml.cs",
+              "RelativeToolTip": "ImmoAppUI\\Views\\DocumentPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T20:13:14.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DocumentPage.xaml",
+              "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\Views\\DocumentPage.xaml",
+              "RelativeDocumentMoniker": "ImmoAppUI\\Views\\DocumentPage.xaml",
+              "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\Views\\DocumentPage.xaml",
+              "RelativeToolTip": "ImmoAppUI\\Views\\DocumentPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-19T20:12:14.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AgentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\ViewModels\\AgentViewModel.cs",
+              "RelativeDocumentMoniker": "ImmoAppUI\\ViewModels\\AgentViewModel.cs",
+              "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\ViewModels\\AgentViewModel.cs",
+              "RelativeToolTip": "ImmoAppUI\\ViewModels\\AgentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T20:09:58.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoApp.TestConsole\\Program.cs",
               "RelativeDocumentMoniker": "ImmoApp.TestConsole\\Program.cs",
               "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoApp.TestConsole\\Program.cs",
               "RelativeToolTip": "ImmoApp.TestConsole\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAwwDkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAgwFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T10:04:05.239Z",
+              "WhenOpened": "2026-04-19T19:40:13.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AgentService.cs",
+              "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoApp.BLL\\Services\\AgentService.cs",
+              "RelativeDocumentMoniker": "ImmoApp.BLL\\Services\\AgentService.cs",
+              "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoApp.BLL\\Services\\AgentService.cs",
+              "RelativeToolTip": "ImmoApp.BLL\\Services\\AgentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T19:37:31.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\AppShell.xaml",
+              "RelativeDocumentMoniker": "ImmoAppUI\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\dymit\\Documents\\Esa_prj\\pgbd\\Project EasyImmo\\ImmoAppUI\\AppShell.xaml",
+              "RelativeToolTip": "ImmoAppUI\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-19T19:34:15.572Z",
               "EditorCaption": ""
             }
           ]

@@ -45,3 +45,69 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ImmoAppUI.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/dymit/Documents/Esa_prj/pgbd/Project EasyImmo/ImmoAppUI/Views/AddAgentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ImmoAppUI.Views.AddAgentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddAgentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddAgentPage.xaml
+
+[C:/Users/dymit/Documents/Esa_prj/pgbd/Project EasyImmo/ImmoAppUI/Views/AgentsListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ImmoAppUI.Views.AgentsListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AgentsListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AgentsListPage.xaml
+
+[C:/Users/dymit/Documents/Esa_prj/pgbd/Project EasyImmo/ImmoAppUI/Views/AppartementsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ImmoAppUI.Views.AppartementsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AppartementsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AppartementsPage.xaml
+
+[C:/Users/dymit/Documents/Esa_prj/pgbd/Project EasyImmo/ImmoAppUI/Views/CalendarPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ImmoAppUI.Views.CalendarPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CalendarPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CalendarPage.xaml
+
+[C:/Users/dymit/Documents/Esa_prj/pgbd/Project EasyImmo/ImmoAppUI/Views/ClientsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ImmoAppUI.Views.ClientsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ClientsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ClientsPage.xaml
+
+[C:/Users/dymit/Documents/Esa_prj/pgbd/Project EasyImmo/ImmoAppUI/Views/DashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ImmoAppUI.Views.DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DashboardPage.xaml
+
+[C:/Users/dymit/Documents/Esa_prj/pgbd/Project EasyImmo/ImmoAppUI/Views/DocumentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ImmoAppUI.Views.DocumentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DocumentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DocumentPage.xaml
+
+[C:/Users/dymit/Documents/Esa_prj/pgbd/Project EasyImmo/ImmoAppUI/Views/HousePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ImmoAppUI.Views.HousePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HousePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HousePage.xaml
+
+[C:/Users/dymit/Documents/Esa_prj/pgbd/Project EasyImmo/ImmoAppUI/Views/LandPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ImmoAppUI.Views.LandPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LandPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LandPage.xaml
+
+[C:/Users/dymit/Documents/Esa_prj/pgbd/Project EasyImmo/ImmoAppUI/Views/MailBoxPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ImmoAppUI.Views.MailBoxPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MailBoxPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MailBoxPage.xaml
+
+[C:/Users/dymit/Documents/Esa_prj/pgbd/Project EasyImmo/ImmoAppUI/Views/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ImmoAppUI.Views.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfilePage.xaml

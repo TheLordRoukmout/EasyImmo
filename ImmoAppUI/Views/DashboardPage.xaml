@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImmoAppUI.Views.DashboardPage"
+             Title="DashboardPage">
+    <Grid ColumnDefinitions="250, *" RowDefinitions="*, *" Padding="10" ColumnSpacing="10" RowSpacing="10">
+        
+        <!-- Colonne de gauche -->
+        <ScrollView Grid.Column="0" Grid.RowSpan="2">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Nouveaux biens" FontSize="16" FontAttributes="Bold"/>
+            </VerticalStackLayout>
+        </ScrollView>
+        
+        <!-- Colone de droite -->
+        <Grid Grid.Column="1" Grid.Row="0" ColumnDefinitions="*, *, *" ColumnSpacing="10">
+           
+            <!--Biens vendus-->
+            <Border Grid.Column="0" Background="#E8F5E9" StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout Padding="15" Spacing="5">
+                    <Label Text="Biens vendus" FontAttributes="Bold" TextColor="#71B73F"/>
+                    <Label Text="0" FontSize="32" TextColor="#71B73F"/>
+                </VerticalStackLayout>
+            </Border>
+            
+            <!--Biens loués-->
+            <Border Grid.Column="1" Background="#E8F5E9" StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout Padding="15" Spacing="5">
+                    <Label Text="Biens Loués" FontAttributes="Bold" TextColor="#71B73F"/>
+                    <Label Text="0" FontSize="32" TextColor="#71B73F"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!--Nouveaux clients-->
+            <Border Grid.Column="2" Background="#E8F5E9" StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout Padding="15" Spacing="5">
+                    <Label Text="Nouveaux clients" FontAttributes="Bold" TextColor="#71B73F"/>
+                    <Label Text="0" FontSize="32" TextColor="#71B73F"/>
+                </VerticalStackLayout>
+            </Border>
+        </Grid>
+        <!-- Agenda -->
+        <Border Grid.Column="1" Grid.Row="1" BackgroundColor="#F3E5F5" StrokeShape="RoundRectangle 10">
+            <VerticalStackLayout Padding="15" Spacing="5">
+                <Label Text="Agenda" FontAttributes="Bold" FontSize="16" TextColor="#71B73F"/>
+                <!-- Les événements apparaîtront ici -->
+            </VerticalStackLayout>
+        </Border>
+
+    </Grid>
+</ContentPage>

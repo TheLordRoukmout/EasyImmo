@@ -3,13 +3,34 @@
     x:Class="ImmoAppUI.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:ImmoAppUI"
-    Shell.FlyoutBehavior="Disabled"
-    Title="ImmoAppUI">
+    xmlns:views="clr-namespace:ImmoAppUI.Views"
+    Title="EasyImmo">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <Tab Title="Dashboard">
+            <ShellContent ContentTemplate="{DataTemplate views:DashboardPage}"/>
+        </Tab>
+        <Tab Title="Maisons">
+            <ShellContent ContentTemplate="{DataTemplate views:HousePage}"/>
+        </Tab>
+        <Tab Title="Appartements">
+            <ShellContent ContentTemplate="{DataTemplate views:AppartementsPage}"/>
+        </Tab>
+        <Tab Title="Terrains">
+            <ShellContent ContentTemplate="{DataTemplate views:LandPage}"/>
+        </Tab>
+        <Tab Title="Documents">
+            <ShellContent ContentTemplate="{DataTemplate views:DocumentPage}"/>
+        </Tab>
+        <Tab Title="Calendar">
+            <ShellContent ContentTemplate="{DataTemplate views:CalendarPage}"/>
+        </Tab>
+        <Tab Title="Mail">
+            <ShellContent ContentTemplate="{DataTemplate views:MailBoxPage}"/>
+        </Tab>
+        <Tab Title="Profil">
+            <ShellContent ContentTemplate="{DataTemplate views:ProfilePage}"/>
+        </Tab>
+    </TabBar>
 
 </Shell>

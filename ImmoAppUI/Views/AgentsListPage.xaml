@@ -17,18 +17,20 @@
                     <Border BackgroundColor="#E3F2FD" 
                             StrokeShape="RoundRectangle 10"
                             Margin="0,5" Padding="15">
-                        <Grid ColumnDefinitions="*, Auto">
+                        <Grid ColumnDefinitions="*, Auto, Auto">
                             <VerticalStackLayout Grid.Column="0">
-                                <Label Text="{Binding IdUserNavigation.Username}" 
-                                       FontAttributes="Bold" FontSize="16"/>
-                                <Label Text="{Binding HireDate}" 
-                                       FontSize="12"/>
+                                <Label Text="{Binding IdUserNavigation.Username}" FontAttributes="Bold" FontSize="16"/>
+                                <Label Text="{Binding HireDate}" FontSize="12"/>
                             </VerticalStackLayout>
-                            <Button Grid.Column="1" Text="Supprimer" 
-                                    BackgroundColor="#EF5350"
-                                    TextColor="White"
-                                    CommandParameter="{Binding IdAgent}"
-                                    Clicked="OnDeleteAgentClicked"/>
+                            <Button Grid.Column="1" Text="Modifier" BackgroundColor="#42A5F5"
+                                TextColor="White"
+                                Margin="5,0"
+                                CommandParameter="{Binding IdAgent}"
+                                Clicked="OnEditAgentClicked"/>
+                            <Button Grid.Column="2" Text="Supprimer" BackgroundColor="#EF5350"
+                                TextColor="White"
+                                CommandParameter="{Binding IdAgent}"
+                                Clicked="OnDeleteAgentClicked"/>
                         </Grid>
                     </Border>
                 </DataTemplate>

@@ -36,6 +36,3 @@ C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.
 C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ImmoAppUI.AssemblyInfoInputs.cache
 C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ImmoAppUI.AssemblyInfo.cs
 C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ImmoAppUI.csproj.CoreCompileInputs.cache
-C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ImmoAppUI.dll
-C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\refint\ImmoAppUI.dll
-C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ImmoAppUI.pdb

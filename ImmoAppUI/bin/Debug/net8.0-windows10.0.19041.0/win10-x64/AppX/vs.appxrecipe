@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-05-09T18:13:31.325</Modified>
+      <Modified>2026-05-17T12:33:34.149</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2026-05-09T18:13:30.989</Modified>
+      <Modified>2026-05-17T12:22:16.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ImmoAppUI.runtimeconfig.json">
       <PackagePath>ImmoAppUI.runtimeconfig.json</PackagePath>
-      <Modified>2026-04-13T17:12:13.297</Modified>
+      <Modified>2026-05-17T12:22:16.188</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ImmoAppUI.dll">
       <PackagePath>ImmoAppUI.dll</PackagePath>
-      <Modified>2026-05-09T18:13:28.457</Modified>
+      <Modified>2026-05-17T12:33:31.620</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ImmoAppUI.exe</PackagePath>
-      <Modified>2026-05-09T18:13:28.548</Modified>
+      <Modified>2026-05-17T12:33:31.675</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -56,23 +56,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2026-04-13T17:06:30.825</Modified>
+      <Modified>2026-05-17T12:20:46.489</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2026-04-13T17:06:30.857</Modified>
+      <Modified>2026-05-17T12:20:46.530</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2026-04-13T17:06:30.906</Modified>
+      <Modified>2026-05-17T12:20:46.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2026-04-13T17:06:30.984</Modified>
+      <Modified>2026-05-17T12:20:46.685</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2026-04-13T17:06:31.271</Modified>
+      <Modified>2026-05-17T12:20:47.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -84,211 +84,211 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2026-04-13T17:06:32.999</Modified>
+      <Modified>2026-05-17T12:20:49.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.956</Modified>
+      <Modified>2026-05-17T12:20:48.985</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.955</Modified>
+      <Modified>2026-05-17T12:20:48.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.955</Modified>
+      <Modified>2026-05-17T12:20:48.983</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.954</Modified>
+      <Modified>2026-05-17T12:20:48.981</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.952</Modified>
+      <Modified>2026-05-17T12:20:48.981</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.985</Modified>
+      <Modified>2026-05-17T12:20:49.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.984</Modified>
+      <Modified>2026-05-17T12:20:49.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.981</Modified>
+      <Modified>2026-05-17T12:20:49.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.983</Modified>
+      <Modified>2026-05-17T12:20:49.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.983</Modified>
+      <Modified>2026-05-17T12:20:49.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.990</Modified>
+      <Modified>2026-05-17T12:20:49.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.989</Modified>
+      <Modified>2026-05-17T12:20:49.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.987</Modified>
+      <Modified>2026-05-17T12:20:49.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.988</Modified>
+      <Modified>2026-05-17T12:20:49.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.988</Modified>
+      <Modified>2026-05-17T12:20:49.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.998</Modified>
+      <Modified>2026-05-17T12:20:49.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.998</Modified>
+      <Modified>2026-05-17T12:20:49.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.997</Modified>
+      <Modified>2026-05-17T12:20:49.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.996</Modified>
+      <Modified>2026-05-17T12:20:49.017</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.994</Modified>
+      <Modified>2026-05-17T12:20:49.017</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.994</Modified>
+      <Modified>2026-05-17T12:20:49.016</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.993</Modified>
+      <Modified>2026-05-17T12:20:49.016</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.990</Modified>
+      <Modified>2026-05-17T12:20:49.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.992</Modified>
+      <Modified>2026-05-17T12:20:49.015</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.992</Modified>
+      <Modified>2026-05-17T12:20:49.013</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.971</Modified>
+      <Modified>2026-05-17T12:20:48.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.970</Modified>
+      <Modified>2026-05-17T12:20:48.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.969</Modified>
+      <Modified>2026-05-17T12:20:48.993</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.968</Modified>
+      <Modified>2026-05-17T12:20:48.991</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.968</Modified>
+      <Modified>2026-05-17T12:20:48.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.976</Modified>
+      <Modified>2026-05-17T12:20:49.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.974</Modified>
+      <Modified>2026-05-17T12:20:48.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.974</Modified>
+      <Modified>2026-05-17T12:20:48.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.973</Modified>
+      <Modified>2026-05-17T12:20:48.997</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.973</Modified>
+      <Modified>2026-05-17T12:20:48.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.981</Modified>
+      <Modified>2026-05-17T12:20:49.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.981</Modified>
+      <Modified>2026-05-17T12:20:49.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.980</Modified>
+      <Modified>2026-05-17T12:20:49.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.978</Modified>
+      <Modified>2026-05-17T12:20:49.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.977</Modified>
+      <Modified>2026-05-17T12:20:49.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.967</Modified>
+      <Modified>2026-05-17T12:20:48.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.966</Modified>
+      <Modified>2026-05-17T12:20:48.989</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.965</Modified>
+      <Modified>2026-05-17T12:20:48.988</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.965</Modified>
+      <Modified>2026-05-17T12:20:48.987</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2026-04-13T17:06:32.964</Modified>
+      <Modified>2026-05-17T12:20:48.986</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2026-04-13T17:06:33.005</Modified>
+      <Modified>2026-05-17T12:20:48.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2026-04-13T17:06:33.003</Modified>
+      <Modified>2026-05-17T12:20:48.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2026-04-13T17:06:33.002</Modified>
+      <Modified>2026-05-17T12:20:48.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2026-04-13T17:06:33.001</Modified>
+      <Modified>2026-05-17T12:20:48.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2026-04-13T17:06:33.000</Modified>
+      <Modified>2026-05-17T12:20:48.977</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ImmoAppUI.deps.json">
       <PackagePath>ImmoAppUI.deps.json</PackagePath>
-      <Modified>2026-05-09T18:13:30.631</Modified>
+      <Modified>2026-05-17T12:22:16.025</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.56\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -696,11 +696,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\bin\Debug\net8.0\ImmoApp.BLL.dll">
       <PackagePath>ImmoApp.BLL.dll</PackagePath>
-      <Modified>2026-05-09T18:13:17.177</Modified>
+      <Modified>2026-05-17T12:24:49.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.DataAccess\bin\Debug\net8.0\ImmoApp.DataAccess.dll">
       <PackagePath>ImmoApp.DataAccess.dll</PackagePath>
-      <Modified>2026-04-19T19:51:16.170</Modified>
+      <Modified>2026-05-17T12:18:54.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dymit\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

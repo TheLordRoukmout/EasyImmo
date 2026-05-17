@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImmoAppUI.Views.RealEstatePage"
+             Title="Biens immobiliers">
+
+    <Grid ColumnDefinitions="260, *" Padding="10" ColumnSpacing="10">
+
+        <!-- COLONNE GAUCHE : Filtres -->
+        <VerticalStackLayout Grid.Column="0" Spacing="15" Padding="10">
+            <Label Text="FILTRES" FontAttributes="Bold" FontSize="18" TextColor="#71B73F"/>
+
+            <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
+                <Entry Placeholder="Réf..." Margin="10,5"/>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
+                <Entry Placeholder="Prix" Margin="10,5" Keyboard="Numeric"/>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
+                <Entry Placeholder="Localité" Margin="10,5"/>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
+                <Entry Placeholder="Superficie" Margin="10,5" Keyboard="Numeric"/>
+            </Border>
+
+            <Button Text="Appliquer"
+                    BackgroundColor="#71B73F"
+                    TextColor="White"
+                    CornerRadius="20"
+                    Clicked="OnFilterClicked"/>
+        </VerticalStackLayout>
+
+        <!-- COLONNE DROITE : Grille de cartes -->
+        <Grid Grid.Column="1">
+            <ScrollView>
+                <CollectionView ItemsSource="{Binding RealEstates}">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="3" HorizontalItemSpacing="10" VerticalItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border StrokeShape="RoundRectangle 15" Stroke="#CCCCCC" Margin="5">
+                                <Grid RowDefinitions="250, Auto">
+
+                                    <!-- Photo du bien -->
+                                    <Grid Grid.Row="0">
+                                        <Image Source="house_placeholder.png" 
+                               Aspect="AspectFill"
+                               HeightRequest="250"/>
+                                    </Grid>
+
+                                    <!-- Bouton Plus d'informations -->
+                                    <Button Grid.Row="1"
+                            Text="PLUS D'INFORMATIONS ▶"
+                            BackgroundColor="#71B73F"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CommandParameter="{Binding IdEstate}"
+                            Clicked="OnDetailsClicked"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+            <Button Text="+"
+                BackgroundColor="#71B73F"
+                TextColor="White"
+                FontSize="28"
+                CornerRadius="30"
+                WidthRequest="60"
+                HeightRequest="60"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                Margin="20"
+                Clicked="OnAddEstateClicked"/>
+        </Grid>
+
+    </Grid>
+
+</ContentPage>

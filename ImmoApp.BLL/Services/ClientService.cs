@@ -92,5 +92,28 @@ namespace ImmoApp.BLL.Services
                 context.SaveChanges();
             }
         }
+
+        // Métode pour lsiter les 20n derniers clients dans le dashboard
+        public List<Client> GetLastClients()
+        {
+            using (var context = new ImmoDbContext())
+            {
+                return context.Clients
+                    .OrderByDescending(c => c.IdClient)
+                    .Take(20)
+                    .ToList();
+            }
+        }
+
+        //Fonction pour la barre de recherche de client
+        public List<Client> SearchClients(string query)
+        {
+            using (var context = new ImmoDbContext())
+            {
+                return context.Clients
+                    .Where(c => c.Firstname.Contains(query) || c.Lastname.Contains(query))
+                    .ToList();
+            }
+        }
     }
 }

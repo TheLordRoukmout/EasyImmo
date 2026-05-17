@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImmoAppUI.Views.AddRealEstatePage"
+             Title="Ajouter un bien">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="15">
+
+            <Label Text="Nouveau bien" FontSize="24" FontAttributes="Bold" TextColor="#71B73F"/>
+
+            <!-- Titre -->
+            <Label Text="Titre" FontAttributes="Bold"/>
+            <Entry x:Name="TitleEntry" Placeholder="Ex: Belle maison 4 façades"/>
+
+            <!-- Référence -->
+            <Label Text="Référence" FontAttributes="Bold"/>
+            <Entry x:Name="ReferenceEntry" Placeholder="Ex: 000001"/>
+
+            <!-- Adresse -->
+            <Label Text="Adresse" FontAttributes="Bold"/>
+            <Entry x:Name="AddressEntry" Placeholder="Ex: Rue Alfred Scheers 3"/>
+
+            <!-- Ville -->
+            <Label Text="Ville" FontAttributes="Bold"/>
+            <Entry x:Name="CityEntry" Placeholder="Ex: Beauvechain"/>
+
+            <!-- Code postal -->
+            <Label Text="Code postal" FontAttributes="Bold"/>
+            <Entry x:Name="PostalCodeEntry" Placeholder="Ex: 1320" Keyboard="Numeric"/>
+
+            <!-- Prix -->
+            <Label Text="Prix (€)" FontAttributes="Bold"/>
+            <Entry x:Name="PriceEntry" Placeholder="Ex: 420000" Keyboard="Numeric"/>
+
+            <!-- Surface -->
+            <Label Text="Surface (m²)" FontAttributes="Bold"/>
+            <Entry x:Name="SurfaceEntry" Placeholder="Ex: 350" Keyboard="Numeric"/>
+
+            <!-- Description -->
+            <Label Text="Description" FontAttributes="Bold"/>
+            <Editor x:Name="DescriptionEditor" 
+                    Placeholder="Description du bien..."
+                    HeightRequest="120"/>
+
+            <!-- Type de bien -->
+            <Label Text="Type de bien" FontAttributes="Bold"/>
+            <Picker x:Name="TypeEstatePicker" 
+                    Title="Sélectionner un type"
+                    ItemDisplayBinding="{Binding Label}"/>
+
+            <!-- Propriétaire -->
+            <Label Text="Propriétaire" FontAttributes="Bold"/>
+            <Picker x:Name="OwnerPicker" 
+                    Title="Sélectionner un propriétaire"
+                    ItemDisplayBinding="{Binding Fullname}"/>
+
+            <!-- Bouton -->
+            <Button Text="Ajouter le bien"
+                    BackgroundColor="#71B73F"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Margin="0,10,0,0"
+                    Clicked="OnAddEstateClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -18,7 +18,7 @@
             <!--Biens vendus-->
             <Border Grid.Column="0" Background="#E8F5E9" StrokeShape="RoundRectangle 10">
                 <VerticalStackLayout Padding="15" Spacing="5">
-                    <Label Text="Biens vendus" FontAttributes="Bold" TextColor="#71B73F"/>
+                    <Label Text="Biens vendus" FontAttributes="Bold" TextColor="#1A1A1A"/>
                     <Label Text="0" FontSize="32" TextColor="#71B73F"/>
                 </VerticalStackLayout>
             </Border>
@@ -26,23 +26,40 @@
             <!--Biens loués-->
             <Border Grid.Column="1" Background="#E8F5E9" StrokeShape="RoundRectangle 10">
                 <VerticalStackLayout Padding="15" Spacing="5">
-                    <Label Text="Biens Loués" FontAttributes="Bold" TextColor="#71B73F"/>
+                    <Label Text="Biens Loués" FontAttributes="Bold" TextColor="#1A1A1A"/>
                     <Label Text="0" FontSize="32" TextColor="#71B73F"/>
                 </VerticalStackLayout>
             </Border>
 
             <!--Nouveaux clients-->
             <Border Grid.Column="2" Background="#E8F5E9" StrokeShape="RoundRectangle 10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnClientsTapped"/>
+                </Border.GestureRecognizers>
                 <VerticalStackLayout Padding="15" Spacing="5">
-                    <Label Text="Nouveaux clients" FontAttributes="Bold" TextColor="#71B73F"/>
-                    <Label Text="0" FontSize="32" TextColor="#71B73F"/>
+                    <Label Text="Nouveaux clients" FontAttributes="Bold" TextColor="#1A1A1A"/>
+                    <!-- <Label Text="{Binding TotalClients}" FontSize="32" TextColor="#71B73F"/> -->
+
+                    <!-- Liste des 20 derniers clients -->
+                    <CollectionView ItemsSource="{Binding LastClients}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid ColumnDefinitions="100, 100, 120, 150" Padding="5" ColumnSpacing="10">
+                                    <Label Grid.Column="0" Text="{Binding Firstname}" FontSize="12" TextColor="#71B73F"/>
+                                    <Label Grid.Column="1" Text="{Binding Lastname}" FontSize="12" TextColor="#71B73F"/>
+                                    <Label Grid.Column="2" Text="{Binding Phone}" FontSize="12" TextColor="#71B73F"/>
+                                    <Label Grid.Column="3" Text="{Binding Email}" FontSize="12" TextColor="#71B73F"/>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </VerticalStackLayout>
             </Border>
         </Grid>
         <!-- Agenda -->
         <Border Grid.Column="1" Grid.Row="1" BackgroundColor="#F3E5F5" StrokeShape="RoundRectangle 10">
             <VerticalStackLayout Padding="15" Spacing="5">
-                <Label Text="Agenda" FontAttributes="Bold" FontSize="16" TextColor="#71B73F"/>
+                <Label Text="Agenda" FontAttributes="Bold" FontSize="16" TextColor="#1A1A1A"/>
                 <!-- Les événements apparaîtront ici -->
             </VerticalStackLayout>
         </Border>

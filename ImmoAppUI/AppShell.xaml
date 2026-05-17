@@ -10,14 +10,8 @@
         <Tab Title="Dashboard">
             <ShellContent ContentTemplate="{DataTemplate views:DashboardPage}"/>
         </Tab>
-        <Tab Title="Maisons">
-            <ShellContent ContentTemplate="{DataTemplate views:HousePage}"/>
-        </Tab>
-        <Tab Title="Appartements">
-            <ShellContent ContentTemplate="{DataTemplate views:AppartementsPage}"/>
-        </Tab>
-        <Tab Title="Terrains">
-            <ShellContent ContentTemplate="{DataTemplate views:LandPage}"/>
+        <Tab Title="Biens">
+            <ShellContent ContentTemplate="{DataTemplate views:BiensPage}"/>
         </Tab>
         <Tab Title="Documents">
             <ShellContent ContentTemplate="{DataTemplate views:DocumentPage}"/>

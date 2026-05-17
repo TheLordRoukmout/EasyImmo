@@ -106,6 +106,15 @@ namespace ImmoApp.TestConsole
 
 /*            clientService.UpdateClient(5, "LastNameTestUpdate", "FirstNameUpdate", "Test@update.com", "047521263", "Chaussée du test update", "Acheteur");*/
 
+            var realEstateService = new RealEstateService();
+            /*realEstateService.AddRealEstate("Maison Hamme-Mille", "000001", "Rue Alfred Scheers 3", "Beauvechain", "1320", 420000, 350, "Grande maison 4 faceades dans le Brabant Wallon", 1, 2);
+            Console.WriteLine("Création du bien effectué !");*/
+
+            var allEstates = realEstateService.GetAllRealEstates();
+            foreach (var estate in allEstates)
+            {
+                Console.WriteLine($"ID: {estate.IdEstate} - {estate.Title} - {estate.City} - {estate.Price}€");
+            }
 
 
         }

@@ -102,5 +102,3 @@ C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.
 C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-android\ImmoAppUI.AssemblyInfoInputs.cache
 C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-android\ImmoAppUI.AssemblyInfo.cs
 C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-android\ImmoAppUI.csproj.CoreCompileInputs.cache
-C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-android\ImmoAppUI.dll
-C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoAppUI\obj\Debug\net8.0-android\ImmoAppUI.pdb

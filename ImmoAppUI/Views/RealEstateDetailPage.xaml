@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImmoAppUI.Views.RealEstateDetailPage"
+             Title="{Binding Title}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- CAROUSEL PHOTOS -->
+            <Grid HeightRequest="350">
+                <CollectionView ItemsSource="{Binding Images}"
+                    HeightRequest="350">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" 
+                               ItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding ImagePath}"
+                       Aspect="AspectFill"
+                       HeightRequest="350"
+                       WidthRequest="500"/>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!-- Placeholder si pas de photos -->
+                <Border BackgroundColor="#F5F5F5" 
+                        StrokeShape="RoundRectangle 15"
+                        IsVisible="{Binding HasNoImages}">
+                    <Label Text="Aucune photo disponible" 
+                           HorizontalOptions="Center" 
+                           VerticalOptions="Center"
+                           TextColor="#AAAAAA"/>
+                </Border>
+
+                <!-- Bouton ajouter photo -->
+                <Button Text="Gérer les photos"
+                        BackgroundColor="#71B73F"
+                        TextColor="White"
+                        CornerRadius="20"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        Margin="10"
+                        Clicked="OnManagePhotosClicked"/>
+            </Grid>
+
+            <!-- 3 CARTES EN LIGNE -->
+            <Grid ColumnDefinitions="*, *, *" ColumnSpacing="15">
+
+                <!-- CARTE INFOS -->
+                <Border Grid.Column="0" StrokeShape="RoundRectangle 15" Stroke="#CCCCCC">
+                    <VerticalStackLayout Padding="15" Spacing="8">
+                        <Label Text="Informations" FontAttributes="Bold" 
+                               FontSize="16" TextColor="#71B73F"/>
+                        <Label Text="{Binding Reference, StringFormat='Réf: {0}'}"/>
+                        <Label Text="{Binding Price, StringFormat='Prix: {0:N0}€'}"/>
+                        <Label Text="{Binding Surface, StringFormat='Surface: {0}m²'}"/>
+                        <Label Text="{Binding Address}"/>
+                        <Label Text="{Binding City}"/>
+                        <Label Text="{Binding Description}" TextColor="#666666"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- CARTE CLIENT -->
+                <Border Grid.Column="1" StrokeShape="RoundRectangle 15" Stroke="#CCCCCC">
+                    <VerticalStackLayout Padding="15" Spacing="8">
+                        <Label Text="Propriétaire" FontAttributes="Bold" FontSize="16" TextColor="#71B73F"/>
+                        <Label Text="{Binding Owner.Firstname}"/>
+                        <Label Text="{Binding Owner.Lastname}"/>
+                        <Label Text="{Binding Owner.Email}"/>
+                        <Label Text="{Binding Owner.Phone}"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- CARTE DOCUMENTS -->
+                <Border Grid.Column="2" StrokeShape="RoundRectangle 15" Stroke="#CCCCCC">
+                    <VerticalStackLayout Padding="15" Spacing="8">
+                        <Label Text="Documents" FontAttributes="Bold" 
+                               FontSize="16" TextColor="#71B73F"/>
+                        <Label Text="Aucun document" TextColor="#AAAAAA"/>
+                    </VerticalStackLayout>
+                </Border>
+
+            </Grid>
+
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="15">
+                <!-- STATUT -->
+                <Border Grid.Column="0" StrokeShape="RoundRectangle 15" Stroke="#CCCCCC">
+                    <VerticalStackLayout Padding="15" Spacing="10">
+
+                        <!-- Statut actuel -->
+                        <HorizontalStackLayout Spacing="10">
+                            <Label Text="Statut actuel :" FontAttributes="Bold" FontSize="16"/>
+                            <Label Text="{Binding CurrentStatus}" 
+                       TextColor="#71B73F" 
+                       FontAttributes="Bold"
+                       FontSize="16"/>
+                        </HorizontalStackLayout>
+
+                        <!-- Changer le statut -->
+                        <HorizontalStackLayout Spacing="10">
+                            <Picker x:Name="StatusPicker"
+                        Title="Changer le statut"
+                        ItemsSource="{Binding AllStatuses}"
+                        ItemDisplayBinding="{Binding Label}"
+                        WidthRequest="200"/>
+                            <Button Text="Appliquer"
+                        BackgroundColor="#71B73F"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Clicked="OnChangeStatusClicked"/>
+                        </HorizontalStackLayout>
+
+                        <!-- Historique -->
+                        <Label Text="Historique" FontAttributes="Bold" FontSize="14"/>
+                        <CollectionView ItemsSource="{Binding StatusHistory}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid ColumnDefinitions="*, *, *" Padding="5">
+                                        <Label Grid.Column="0" 
+                                   Text="{Binding IdStatusOfferNavigation.Label}"
+                                   FontAttributes="Bold"/>
+                                        <Label Grid.Column="1" 
+                                   Text="{Binding DateStart, StringFormat='{0:dd/MM/yyyy}'}"/>
+                                        <Label Grid.Column="2" 
+                                   Text="{Binding DateEnd, StringFormat='{0:dd/MM/yyyy}'}"
+                                   TextColor="#AAAAAA"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- ÉVÉNEMENTS -->
+                <Border Grid.Column="1" StrokeShape="RoundRectangle 15" Stroke="#CCCCCC">
+                    <VerticalStackLayout Padding="15" Spacing="10">
+
+                        <HorizontalStackLayout>
+                            <Label Text="Événements" FontAttributes="Bold" 
+                       FontSize="16" HorizontalOptions="Start"/>
+                            <Button Text="+ Ajouter"
+                        BackgroundColor="#71B73F"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Clicked="OnAddEventClicked"/>
+                        </HorizontalStackLayout>
+
+                        <CollectionView ItemsSource="{Binding Events}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Border StrokeShape="RoundRectangle 10" 
+                                BackgroundColor="#F5F5F5" Margin="0,5">
+                                        <Grid ColumnDefinitions="*, *, *, Auto" Padding="10">
+                                            <Label Grid.Column="0" 
+                                       Text="{Binding IdTypeEventNavigation.Label}"
+                                       FontAttributes="Bold"/>
+                                            <Label Grid.Column="1" 
+                                       Text="{Binding DateEvent, StringFormat='{0:dd/MM/yyyy}'}"/>
+                                            <Label Grid.Column="2" 
+                                       Text="{Binding Notes}"
+                                       TextColor="#666666"/>
+                                            <Button Grid.Column="3" Text="Supprimer"
+                                        BackgroundColor="#EF5350"
+                                        TextColor="White"
+                                        CornerRadius="5"
+                                        CommandParameter="{Binding IdEvent}"
+                                        Clicked="OnDeleteEventClicked"/>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+
+            <!-- BOUTONS EDIT / DELETE -->
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="End">
+                <Button Text="Modifier"
+                        BackgroundColor="#42A5F5"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Clicked="OnEditClicked"/>
+                <Button Text="Supprimer"
+                        BackgroundColor="#EF5350"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Clicked="OnDeleteClicked"/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

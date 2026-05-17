@@ -39,6 +39,9 @@ public partial class ImmoDbContext : DbContext
 
     public virtual DbSet<UserProg> UserProgs { get; set; }
 
+    public virtual DbSet<EstateImage> EstateImages { get; set; }
+
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=EsayImmo;Trusted_Connection=True;Encrypt=False");
@@ -326,6 +329,23 @@ public partial class ImmoDbContext : DbContext
             entity.Property(e => e.Username)
                 .HasMaxLength(50)
                 .HasColumnName("username");
+        });
+
+        modelBuilder.Entity<EstateImage>(entity =>
+        {
+            entity.HasKey(e => e.IdImage).HasName("PK__Estate_I__");
+
+            entity.ToTable("Estate_Images");
+
+            entity.Property(e => e.IdImage).HasColumnName("id_image");
+            entity.Property(e => e.IdEstate).HasColumnName("id_estate");
+            entity.Property(e => e.ImagePath).HasMaxLength(500).HasColumnName("image_path");
+            entity.Property(e => e.IsMain).HasDefaultValue(false).HasColumnName("is_main");
+
+            entity.HasOne(d => d.IdEstateNavigation)
+                .WithMany(p => p.EstateImages)
+                .HasForeignKey(d => d.IdEstate)
+                .HasConstraintName("FK__Estate_Im__id_es__6FE99F9F");
         });
 
         OnModelCreatingPartial(modelBuilder);

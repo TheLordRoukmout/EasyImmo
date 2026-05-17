@@ -57,5 +57,26 @@ namespace ImmoApp.BLL.Services
                 context.SaveChanges();
             }
         }
+
+        public void UpdateAgent(int idAgent, string username, string? email, string? phone, DateOnly? hireDate, bool active)
+        {
+            using (var context = new ImmoDbContext())
+            {
+                var agent = context.Agents
+                    .Include(a => a.IdUserNavigation)
+                    .FirstOrDefault(a => a.IdAgent == idAgent);
+
+                if (agent == null)
+                    throw new Exception("Agent non trouvé");
+
+                agent.HireDate = hireDate;
+                agent.Active = active;
+                agent.IdUserNavigation.Username = username;
+                agent.IdUserNavigation.Email = email;
+                agent.IdUserNavigation.Phone = phone;
+
+                context.SaveChanges();
+            }
+        }
     }
 }

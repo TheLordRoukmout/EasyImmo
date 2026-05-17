@@ -19,6 +19,8 @@ public partial class Client
 
     public string? TypeClient { get; set; }
 
+    public string Fullname => $"{Firstname} {Lastname}";
+
     public virtual ICollection<AgencyService> AgencyServices { get; set; } = new List<AgencyService>();
 
     public virtual ICollection<ClientEvent> ClientEvents { get; set; } = new List<ClientEvent>();

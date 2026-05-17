@@ -38,4 +38,12 @@ public partial class ClientsListPage : ContentPage
         int idClient = (int)button.CommandParameter;
         await Navigation.PushAsync(new EditClientPage(idClient));
     }
+
+    private void OnSearchTextChanged(object sender, TextChangedEventArgs e)
+    {
+        if (string.IsNullOrEmpty(e.NewTextValue))
+            _viewModel.LoadClients();
+        else
+            _viewModel.SearchClients(e.NewTextValue);
+    }
 }

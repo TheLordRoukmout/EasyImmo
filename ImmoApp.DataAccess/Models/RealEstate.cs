@@ -29,6 +29,10 @@ public partial class RealEstate
 
     public int? IdOwner { get; set; }
 
+    public string? MainImagePath => EstateImages
+    .FirstOrDefault(i => i.IsMain == true)?.ImagePath
+    ?? EstateImages.FirstOrDefault()?.ImagePath;
+
     public virtual ICollection<EstateStatusHistory> EstateStatusHistories { get; set; } = new List<EstateStatusHistory>();
 
     public virtual ICollection<Event> Events { get; set; } = new List<Event>();
@@ -36,4 +40,6 @@ public partial class RealEstate
     public virtual Client? IdOwnerNavigation { get; set; }
 
     public virtual TypeEstate IdTypeEstateNavigation { get; set; } = null!;
+
+    public virtual ICollection<EstateImage> EstateImages { get; set; } = new List<EstateImage>();
 }

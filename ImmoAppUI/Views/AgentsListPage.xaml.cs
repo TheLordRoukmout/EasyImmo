@@ -31,5 +31,13 @@ namespace ImmoAppUI.Views
         {
             await Navigation.PushAsync(new AddAgentPage());
         }
+
+        private async void OnEditAgentClicked(object sender, EventArgs e)
+        {
+            var button = sender as Button;
+            if (button == null) return;
+            int idAgent = (int)button.CommandParameter;
+            await Navigation.PushAsync(new EditAgentPage(idAgent));
+        }
     }
 }

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImmoAppUI.Views.BiensPage"
+             Title="Biens immobiliers">
+
+    <Grid ColumnDefinitions="260, *" Padding="10" ColumnSpacing="10">
+
+        <!-- COLONNE GAUCHE : Filtres -->
+        <VerticalStackLayout Grid.Column="0" Spacing="15" Padding="10">
+            <Label Text="FILTRES" FontAttributes="Bold" FontSize="18" TextColor="#71B73F"/>
+
+            <!-- Filtre Type -->
+            <Label Text="Type de bien" FontAttributes="Bold"/>
+            <Picker x:Name="TypePicker" 
+                    Title="Tous les types"
+                    ItemDisplayBinding="{Binding Label}"
+                    SelectedIndexChanged="OnTypePickerChanged"/>
+
+            <!-- Filtre Référence -->
+            <Label Text="Référence" FontAttributes="Bold"/>
+            <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
+                <Entry x:Name="RefEntry" Placeholder="Réf..." Margin="10,5"/>
+            </Border>
+
+            <!-- Filtre Prix max -->
+            <Label Text="Prix maximum (€)" FontAttributes="Bold"/>
+            <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
+                <Entry x:Name="PriceEntry" Placeholder="Ex: 500000" Keyboard="Numeric" Margin="10,5"/>
+            </Border>
+
+            <!-- Filtre Localité -->
+            <Label Text="Localité" FontAttributes="Bold"/>
+            <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
+                <Entry x:Name="CityEntry" Placeholder="Ex: Bruxelles" Margin="10,5"/>
+            </Border>
+
+            <!-- Filtre Surface min -->
+            <Label Text="Surface minimum (m²)" FontAttributes="Bold"/>
+            <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
+                <Entry x:Name="SurfaceEntry" Placeholder="Ex: 100" Keyboard="Numeric" Margin="10,5"/>
+            </Border>
+
+            <!-- Bouton Appliquer -->
+            <Button Text="Appliquer"
+                    BackgroundColor="#71B73F"
+                    TextColor="White"
+                    CornerRadius="20"
+                    Clicked="OnFilterClicked"/>
+
+            <!-- Bouton Reset -->
+            <Button Text="Réinitialiser"
+                    BackgroundColor="#CCCCCC"
+                    TextColor="White"
+                    CornerRadius="20"
+                    Clicked="OnResetClicked"/>
+
+        </VerticalStackLayout>
+
+        <!-- COLONNE DROITE : Grille de cartes -->
+        <Grid Grid.Column="1">
+            <ScrollView>
+                <CollectionView ItemsSource="{Binding RealEstates}">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="3" 
+                                         HorizontalItemSpacing="10" VerticalItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border StrokeShape="RoundRectangle 15" Stroke="#CCCCCC" Margin="5">
+                                <Grid RowDefinitions="250, Auto">
+                                    <Image Grid.Row="0" 
+                                       Source="{Binding MainImagePath}"
+                                       Aspect="AspectFill" 
+                                       HeightRequest="250"/>
+                                    <Button Grid.Row="1"
+                                            Text="PLUS D'INFORMATIONS ▶"
+                                            BackgroundColor="#71B73F"
+                                            TextColor="White"
+                                            FontAttributes="Bold"
+                                            CommandParameter="{Binding IdEstate}"
+                                            Clicked="OnDetailsClicked"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+
+            <!-- FAB Button -->
+            <Button Text="+"
+                    BackgroundColor="#71B73F"
+                    TextColor="White"
+                    FontSize="28"
+                    CornerRadius="30"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    Margin="20"
+                    Clicked="OnAddEstateClicked"/>
+        </Grid>
+
+    </Grid>
+
+</ContentPage>

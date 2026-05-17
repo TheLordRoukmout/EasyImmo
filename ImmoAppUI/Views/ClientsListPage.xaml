@@ -13,6 +13,7 @@
         <!-- Tableau pour les clients -->
         <!-- La CollectionView est branchée sur la liste du ViewModel via Binding -->
         <VerticalStackLayout Grid.Row="1">
+            <SearchBar Placeholder="Rechercher un client..." TextChanged="OnSearchTextChanged"/>
             <Grid ColumnDefinitions="150, 150, 200, 120, 200, 120, Auto, Auto" BackgroundColor="#42A5F5" Padding="10">
                 <Label Grid.Column="0" Text="Prénom" TextColor="White" FontAttributes="Bold"/>
                 <Label Grid.Column="1" Text="Nom" TextColor="White" FontAttributes="Bold"/>

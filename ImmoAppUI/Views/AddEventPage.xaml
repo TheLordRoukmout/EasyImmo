@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImmoAppUI.Views.AddEventPage"
+             Title="Ajouter un événement">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="15">
+
+            <Label Text="Nouvel événement" FontSize="24" 
+                   FontAttributes="Bold" TextColor="#71B73F"/>
+
+            <!-- Type d'événement -->
+            <Label Text="Type d'événement" FontAttributes="Bold"/>
+            <Picker x:Name="TypeEventPicker"
+                    Title="Sélectionner un type"
+                    ItemDisplayBinding="{Binding Label}"/>
+
+            <!-- Date -->
+            <Label Text="Date" FontAttributes="Bold"/>
+            <DatePicker x:Name="EventDatePicker"/>
+
+            <!-- Notes -->
+            <Label Text="Notes" FontAttributes="Bold"/>
+            <Editor x:Name="NotesEditor"
+                    Placeholder="Notes sur l'événement..."
+                    HeightRequest="100"/>
+
+            <!-- Client lié -->
+            <Label Text="Client lié" FontAttributes="Bold"/>
+            <Picker x:Name="ClientPicker"
+                    Title="Sélectionner un client"
+                    ItemDisplayBinding="{Binding Fullname}"/>
+
+            <!-- Rôle du client -->
+            <Label Text="Rôle du client" FontAttributes="Bold"/>
+            <Entry x:Name="RoleEntry" Placeholder="Ex: Visiteur, Acheteur..."/>
+
+            <!-- Bouton -->
+            <Button Text="Ajouter l'événement"
+                    BackgroundColor="#71B73F"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Margin="0,10,0,0"
+                    Clicked="OnAddEventClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

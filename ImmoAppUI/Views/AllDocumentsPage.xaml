@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImmoAppUI.Views.AllDocumentsPage"
+             Title="Documents">
+
+    <Grid RowDefinitions="Auto, Auto, *" Padding="20" RowSpacing="15">
+
+        <!-- Titre -->
+        <Label Grid.Row="0" Text="Tous les documents" 
+               FontSize="24" FontAttributes="Bold" TextColor="#71B73F"/>
+
+        <!-- Barre de recherche -->
+        <SearchBar Grid.Row="1" Placeholder="Rechercher un document..."
+                   TextChanged="OnSearchTextChanged"/>
+
+        <!-- Liste documents -->
+        <CollectionView Grid.Row="2" ItemsSource="{Binding Documents}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border StrokeShape="RoundRectangle 10" 
+                            Stroke="#CCCCCC" Margin="0,5" Padding="15">
+                        <Grid ColumnDefinitions="Auto, *, Auto">
+                            <!-- Icône -->
+                            <Label Grid.Column="0" Text="📄" FontSize="24"
+                                   VerticalOptions="Center" Margin="0,0,10,0"/>
+                            <!-- Infos -->
+                            <VerticalStackLayout Grid.Column="1" Spacing="3">
+                                <Label Text="{Binding DocumentName}"
+                                       FontAttributes="Bold" FontSize="14"/>
+                                <Label Text="{Binding IdEstateNavigation.Title}"
+                                       FontSize="12" TextColor="#71B73F"/>
+                                <Label Text="{Binding IdEstateNavigation.Reference, StringFormat='Réf: {0}'}"
+                                       FontSize="11" TextColor="#888888"/>
+                                <Label Text="{Binding UploadDate, StringFormat='Ajouté le {0:dd/MM/yyyy}'}"
+                                       FontSize="11" TextColor="#888888"/>
+                            </VerticalStackLayout>
+                            <!-- Boutons -->
+                            <HorizontalStackLayout Grid.Column="2" Spacing="5">
+                                <Button Text="Ouvrir le document"
+                                        BackgroundColor="#42A5F5"
+                                        TextColor="White"
+                                        CornerRadius="5"
+                                        CommandParameter="{Binding DocumentPath}"
+                                        Clicked="OnOpenDocumentClicked"/>
+                                <Button Text="Voir le bien lié"
+                                        BackgroundColor="#71B73F"
+                                        TextColor="White"
+                                        CornerRadius="5"
+                                        CommandParameter="{Binding IdEstate}"
+                                        Clicked="OnGoToEstateClicked"/>
+                            </HorizontalStackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>

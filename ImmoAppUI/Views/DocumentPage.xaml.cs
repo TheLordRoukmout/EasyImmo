@@ -2,10 +2,11 @@ namespace ImmoAppUI.Views;
 
 public partial class DocumentPage : ContentPage
 {
-	public DocumentPage()
-	{
-		InitializeComponent();
-	}
+    public DocumentPage()
+    {
+        InitializeComponent();
+    }
+
     private async void OnAgentsTapped(object sender, TappedEventArgs e)
     {
         await Navigation.PushAsync(new AgentsListPage());
@@ -18,6 +19,6 @@ public partial class DocumentPage : ContentPage
 
     private async void OnDocumentsTapped(object sender, TappedEventArgs e)
     {
-        await DisplayAlert("Documents", "Section en construction", "OK");
+        await Navigation.PushAsync(new AllDocumentsPage());
     }
 }

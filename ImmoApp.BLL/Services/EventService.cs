@@ -19,6 +19,8 @@ namespace ImmoApp.BLL.Services
                     .Include(e => e.IdTypeEventNavigation)
                     .Include(e => e.ClientEvents)
                         .ThenInclude(ce => ce.IdClientNavigation)
+                    .Include(e => e.IdAgentNavigation)
+                        .ThenInclude(a => a.IdUserNavigation)
                     .Where(e => e.IdEstate == idEstate)
                     .OrderByDescending(e => e.DateEvent)
                     .ToList();
@@ -33,7 +35,7 @@ namespace ImmoApp.BLL.Services
             }
         }
 
-        public void AddEvent(int idEstate, int idTypeEvent, DateTime dateEvent, string? notes, int idClient, string? role)
+        public void AddEvent(int idEstate, int idTypeEvent, DateTime dateEvent, string? notes, int idClient, string? role, int? idAgent)
         {
             if (dateEvent == default)
                 throw new Exception("La date est obligatoire");
@@ -45,13 +47,13 @@ namespace ImmoApp.BLL.Services
                     IdEstate = idEstate,
                     IdTypeEvent = idTypeEvent,
                     DateEvent = dateEvent,
-                    Notes = notes
+                    Notes = notes,
+                    IdAgent = idAgent
                 };
 
                 context.Events.Add(newEvent);
                 context.SaveChanges();
 
-                // Lier le client à l'événement
                 var clientEvent = new ClientEvent
                 {
                     IdEvent = newEvent.IdEvent,
@@ -81,6 +83,42 @@ namespace ImmoApp.BLL.Services
 
                 context.Events.Remove(ev);
                 context.SaveChanges();
+            }
+        }
+
+        public List<Event> GetEventsForCurrentWeek()
+        {
+            using (var context = new ImmoDbContext())
+            {
+                var startOfWeek = DateTime.Today;
+                var endOfWeek = startOfWeek.AddDays(4);
+
+                return context.Events
+                    .Include(e => e.IdTypeEventNavigation)
+                    .Include(e => e.IdEstateNavigation)
+                    .Where(e => e.DateEvent >= startOfWeek && e.DateEvent <= endOfWeek)
+                    .OrderBy(e => e.DateEvent)
+                    .ToList();
+            }
+        }
+
+        public List<Event> GetEventsByMonth(int year, int month)
+        {
+            using (var context = new ImmoDbContext())
+            {
+                var startOfMonth = new DateTime(year, month, 1);
+                var endOfMonth = startOfMonth.AddMonths(1).AddDays(-1);
+
+                return context.Events
+                    .Include(e => e.IdTypeEventNavigation)
+                    .Include(e => e.IdEstateNavigation)
+                    .Include(e => e.IdAgentNavigation)
+                        .ThenInclude(a => a.IdUserNavigation)
+                    .Include(e => e.ClientEvents)
+                        .ThenInclude(ce => ce.IdClientNavigation)
+                    .Where(e => e.DateEvent >= startOfMonth && e.DateEvent <= endOfMonth)
+                    .OrderBy(e => e.DateEvent)
+                    .ToList();
             }
         }
     }

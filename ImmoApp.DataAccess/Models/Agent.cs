@@ -16,4 +16,5 @@ public partial class Agent
     public virtual ICollection<AgencyService> AgencyServices { get; set; } = new List<AgencyService>();
 
     public virtual UserProg IdUserNavigation { get; set; } = null!;
+    public virtual ICollection<Event> Events { get; set; } = new List<Event>();
 }

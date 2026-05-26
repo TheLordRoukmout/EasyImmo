@@ -4,30 +4,75 @@
              x:Class="ImmoAppUI.Views.DashboardPage"
              Title="DashboardPage">
     <Grid ColumnDefinitions="250, *" RowDefinitions="*, *" Padding="10" ColumnSpacing="10" RowSpacing="10">
-        
+
         <!-- Colonne de gauche -->
         <ScrollView Grid.Column="0" Grid.RowSpan="2">
-            <VerticalStackLayout Spacing="10">
-                <Label Text="Nouveaux biens" FontSize="16" FontAttributes="Bold"/>
+            <VerticalStackLayout Spacing="10" Padding="5">
+
+                <Label Text="Nouveaux biens" FontSize="16" 
+               FontAttributes="Bold" TextColor="#71B73F"/>
+
+                <CollectionView ItemsSource="{Binding LastEstates}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border StrokeShape="RoundRectangle 10" 
+                            Stroke="#CCCCCC" Margin="0,5">
+                                <Border.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                CommandParameter="{Binding IdEstate}"
+                                Tapped="OnEstateTapped"/>
+                                </Border.GestureRecognizers>
+                                <VerticalStackLayout>
+                                    <!-- Photo du bien -->
+                                    <Image Source="{Binding MainImagePath}"
+                                   Aspect="AspectFill"
+                                   HeightRequest="150"/>
+                                    <!-- Infos -->
+                                    <VerticalStackLayout Padding="10" Spacing="3">
+                                        <Label Text="{Binding Title}"
+                                       FontAttributes="Bold"
+                                       FontSize="13"
+                                       TextColor="#1A1A1A"/>
+                                        <Label Text="{Binding Reference, StringFormat='Réf: {0}'}"
+                                       FontSize="12"
+                                       TextColor="#71B73F"/>
+                                        <Label Text="{Binding City}"
+                                       FontSize="11"
+                                       TextColor="#888888"/>
+                                        <Label Text="{Binding Price, StringFormat='{0:N0}€'}"
+                                       FontSize="12"
+                                       FontAttributes="Bold"
+                                       TextColor="#71B73F"/>
+                                    </VerticalStackLayout>
+                                </VerticalStackLayout>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
             </VerticalStackLayout>
         </ScrollView>
-        
+
         <!-- Colone de droite -->
         <Grid Grid.Column="1" Grid.Row="0" ColumnDefinitions="*, *, *" ColumnSpacing="10">
-           
+
             <!--Biens vendus-->
             <Border Grid.Column="0" Background="#E8F5E9" StrokeShape="RoundRectangle 10">
                 <VerticalStackLayout Padding="15" Spacing="5">
                     <Label Text="Biens vendus" FontAttributes="Bold" TextColor="#1A1A1A"/>
-                    <Label Text="0" FontSize="32" TextColor="#71B73F"/>
+                    <Label Text="{Binding BiensVendus}" 
+               FontSize="32" 
+               TextColor="{Binding BiensVendusColor}"/>
                 </VerticalStackLayout>
             </Border>
-            
+
             <!--Biens loués-->
             <Border Grid.Column="1" Background="#E8F5E9" StrokeShape="RoundRectangle 10">
                 <VerticalStackLayout Padding="15" Spacing="5">
                     <Label Text="Biens Loués" FontAttributes="Bold" TextColor="#1A1A1A"/>
-                    <Label Text="0" FontSize="32" TextColor="#71B73F"/>
+                    <Label Text="{Binding BiensLoues}" 
+               FontSize="32" 
+               TextColor="{Binding BiensLouesColor}"/>
                 </VerticalStackLayout>
             </Border>
 
@@ -59,8 +104,161 @@
         <!-- Agenda -->
         <Border Grid.Column="1" Grid.Row="1" BackgroundColor="#F3E5F5" StrokeShape="RoundRectangle 10">
             <VerticalStackLayout Padding="15" Spacing="5">
-                <Label Text="Agenda" FontAttributes="Bold" FontSize="16" TextColor="#1A1A1A"/>
-                <!-- Les événements apparaîtront ici -->
+                <!-- CALENDRIER -->
+                <Border Grid.Row="1" Grid.ColumnSpan="2" 
+        StrokeShape="RoundRectangle 15" Stroke="#CCCCCC" Margin="0,10,0,0">
+                    <VerticalStackLayout Padding="15" Spacing="10">
+
+                        <Label Text="Calendrier" FontAttributes="Bold" 
+               FontSize="18" TextColor="#71B73F"/>
+
+                        <!-- 4 colonnes jours -->
+                        <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="10">
+
+                            <!-- LUNDI -->
+                            <Border Grid.Column="0" StrokeShape="RoundRectangle 10" Stroke="#CCCCCC">
+                                <VerticalStackLayout Padding="10" Spacing="5">
+                                    <Label Text="{Binding MondayLabel}" 
+                           TextColor="#71B73F" FontAttributes="Bold" FontSize="12"/>
+                                    <CollectionView ItemsSource="{Binding MondayEvents}">
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border StrokeShape="RoundRectangle 8" BackgroundColor="#F5F5F5" Margin="0,2" Padding="8">
+                                                    <VerticalStackLayout Spacing="2">
+                                                        <!-- Type d'événement -->
+                                                        <HorizontalStackLayout Spacing="5">
+                                                            <BoxView Color="#71B73F" WidthRequest="10" 
+                                                                HeightRequest="10" CornerRadius="5"
+                                                                VerticalOptions="Center"/>
+                                                            <Label FontSize="11" FontAttributes="Bold"
+                                                                Text="{Binding IdTypeEventNavigation.Label}"
+                                                                TextColor="#444444"/>
+                                                        </HorizontalStackLayout>
+                                                        <!-- Référence du bien -->
+                                                        <Label FontSize="10" 
+                                                            Text="{Binding IdEstateNavigation.Reference, StringFormat='Réf: {0}'}"
+                                                            TextColor="#71B73F"/>
+                                                        <!-- Agent responsable -->
+                                                        <Label FontSize="10" 
+                                                            Text="{Binding IdAgentNavigation.IdUserNavigation.Username, StringFormat='Agent: {0}'}"
+                                                            TextColor="#888888"/>
+                                                    </VerticalStackLayout>
+                                                </Border>
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                </VerticalStackLayout>
+                            </Border>
+
+                            <!-- MARDI -->
+                            <Border Grid.Column="1" StrokeShape="RoundRectangle 10" Stroke="#CCCCCC">
+                                <VerticalStackLayout Padding="10" Spacing="5">
+                                    <Label Text="{Binding TuesdayLabel}" 
+                           TextColor="#71B73F" FontAttributes="Bold" FontSize="12"/>
+                                    <CollectionView ItemsSource="{Binding TuesdayEvents}">
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border StrokeShape="RoundRectangle 8" BackgroundColor="#F5F5F5" Margin="0,2" Padding="8">
+                                                    <VerticalStackLayout Spacing="2">
+                                                        <!-- Type d'événement -->
+                                                        <HorizontalStackLayout Spacing="5">
+                                                            <BoxView Color="#71B73F" WidthRequest="10" 
+                                                                HeightRequest="10" CornerRadius="5"
+                                                                VerticalOptions="Center"/>
+                                                            <Label FontSize="11" FontAttributes="Bold"
+                                                                Text="{Binding IdTypeEventNavigation.Label}"
+                                                                TextColor="#444444"/>
+                                                        </HorizontalStackLayout>
+                                                        <!-- Référence du bien -->
+                                                        <Label FontSize="10" 
+                                                            Text="{Binding IdEstateNavigation.Reference, StringFormat='Réf: {0}'}"
+                                                            TextColor="#71B73F"/>
+                                                        <!-- Agent responsable -->
+                                                        <Label FontSize="10" 
+                                                            Text="{Binding IdAgentNavigation.IdUserNavigation.Username, StringFormat='Agent: {0}'}"
+                                                            TextColor="#888888"/>
+                                                    </VerticalStackLayout>
+                                                </Border>
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                </VerticalStackLayout>
+                            </Border>
+
+                            <!-- MERCREDI -->
+                            <Border Grid.Column="2" StrokeShape="RoundRectangle 10" Stroke="#CCCCCC">
+                                <VerticalStackLayout Padding="10" Spacing="5">
+                                    <Label Text="{Binding WednesdayLabel}" 
+                           TextColor="#71B73F" FontAttributes="Bold" FontSize="12"/>
+                                    <CollectionView ItemsSource="{Binding WednesdayEvents}">
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border StrokeShape="RoundRectangle 8" BackgroundColor="#F5F5F5" Margin="0,2" Padding="8">
+                                                    <VerticalStackLayout Spacing="2">
+                                                        <!-- Type d'événement -->
+                                                        <HorizontalStackLayout Spacing="5">
+                                                            <BoxView Color="#71B73F" WidthRequest="10" 
+                                                                HeightRequest="10" CornerRadius="5"
+                                                                VerticalOptions="Center"/>          
+                                                            <Label FontSize="11" FontAttributes="Bold"
+                                                                Text="{Binding IdTypeEventNavigation.Label}"
+                                                                TextColor="#444444"/>
+                                                        </HorizontalStackLayout>
+                                                        <!-- Référence du bien -->
+                                                        <Label FontSize="10" 
+                                                            Text="{Binding IdEstateNavigation.Reference, StringFormat='Réf: {0}'}"
+                                                            TextColor="#71B73F"/>
+                                                        <!-- Agent responsable -->
+                                                        <Label FontSize="10" 
+                                                            Text="{Binding IdAgentNavigation.IdUserNavigation.Username, StringFormat='Agent: {0}'}"
+                                                            TextColor="#888888"/>
+                                                    </VerticalStackLayout>
+                                                </Border>
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                </VerticalStackLayout>
+                            </Border>
+
+                            <!-- JEUDI -->
+                            <Border Grid.Column="3" StrokeShape="RoundRectangle 10" Stroke="#CCCCCC">
+                                <VerticalStackLayout Padding="10" Spacing="5">
+                                    <Label Text="{Binding ThursdayLabel}" 
+                           TextColor="#71B73F" FontAttributes="Bold" FontSize="12"/>
+                                    <CollectionView ItemsSource="{Binding ThursdayEvents}">
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border StrokeShape="RoundRectangle 8" BackgroundColor="#F5F5F5" Margin="0,2" Padding="8">
+                                                    <VerticalStackLayout Spacing="2">
+                                                        <!-- Type d'événement -->
+                                                        <HorizontalStackLayout Spacing="5">
+                                                            <BoxView Color="#71B73F" WidthRequest="10" 
+                                                                HeightRequest="10" CornerRadius="5"
+                                                                VerticalOptions="Center"/>
+                                                            <Label FontSize="11" FontAttributes="Bold"
+                                                                Text="{Binding IdTypeEventNavigation.Label}"
+                                                                TextColor="#444444"/>
+                                                        </HorizontalStackLayout>
+                                                        <!-- Référence du bien -->
+                                                        <Label FontSize="10" 
+                                                            Text="{Binding IdEstateNavigation.Reference, StringFormat='Réf: {0}'}"
+                                                            TextColor="#71B73F"/>
+                                                        <!-- Agent responsable -->
+                                                        <Label FontSize="10" 
+                                                            Text="{Binding IdAgentNavigation.IdUserNavigation.Username, StringFormat='Agent: {0}'}"
+                                                            TextColor="#71B73F"/>
+                                                    </VerticalStackLayout>
+                                                </Border>
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                </VerticalStackLayout>
+                            </Border>
+
+                        </Grid>
+                    </VerticalStackLayout>
+                </Border>
+                <!-- Les événements -->
             </VerticalStackLayout>
         </Border>
 

@@ -85,4 +85,9 @@ public partial class RealEstateDetailPage : ContentPage
             _viewModel?.LoadEvents(_idEstate);
         }
     }
+
+    private async void OnManageDocumentsClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ManageDocumentsPage(_idEstate));
+    }
 }

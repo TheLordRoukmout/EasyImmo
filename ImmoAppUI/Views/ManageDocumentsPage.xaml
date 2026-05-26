@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImmoAppUI.Views.ManageDocumentsPage"
+             Title="Gérer les documents">
+
+    <Grid RowDefinitions="Auto, *, Auto" Padding="20" RowSpacing="15">
+
+        <Label Grid.Row="0" Text="Documents du bien" 
+               FontSize="24" FontAttributes="Bold" TextColor="#71B73F"/>
+
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Documents}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border StrokeShape="RoundRectangle 10" 
+                            Stroke="#CCCCCC" Margin="0,5" Padding="15">
+                        <Grid ColumnDefinitions="Auto, *, Auto">
+                            <!-- Icône document -->
+                            <Label Grid.Column="0" Text="📄" FontSize="24" 
+                                   VerticalOptions="Center" Margin="0,0,10,0"/>
+                            <!-- Infos -->
+                            <VerticalStackLayout Grid.Column="1" Spacing="3">
+                                <Label Text="{Binding DocumentName}" 
+                                       FontAttributes="Bold" FontSize="14"/>
+                                <Label Text="{Binding UploadDate, StringFormat='Ajouté le {0:dd/MM/yyyy}'}" 
+                                       FontSize="11" TextColor="#888888"/>
+                            </VerticalStackLayout>
+                            <!-- Boutons -->
+                            <HorizontalStackLayout Grid.Column="2" Spacing="5">
+                                <Button Text="Ouvrir le document" 
+                                        BackgroundColor="#42A5F5"
+                                        TextColor="White"
+                                        CornerRadius="5"
+                                        CommandParameter="{Binding DocumentPath}"
+                                        Clicked="OnOpenDocumentClicked"/>
+                                <Button Text="Supprimer"
+                                        BackgroundColor="#EF5350"
+                                        TextColor="White"
+                                        CornerRadius="5"
+                                        CommandParameter="{Binding IdDocument}"
+                                        Clicked="OnDeleteDocumentClicked"/>
+                            </HorizontalStackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button Grid.Row="2" Text="+ Ajouter un document"
+                BackgroundColor="#71B73F"
+                TextColor="White"
+                CornerRadius="10"
+                Clicked="OnAddDocumentClicked"/>
+
+    </Grid>
+
+</ContentPage>

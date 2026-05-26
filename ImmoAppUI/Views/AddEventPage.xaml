@@ -31,10 +31,17 @@
             <Picker x:Name="ClientPicker"
                     Title="Sélectionner un client"
                     ItemDisplayBinding="{Binding Fullname}"/>
+            
 
             <!-- Rôle du client -->
             <Label Text="Rôle du client" FontAttributes="Bold"/>
             <Entry x:Name="RoleEntry" Placeholder="Ex: Visiteur, Acheteur..."/>
+
+            <!-- Agent lié -->
+            <Label Text="Agent responsable" FontAttributes="Bold"/>
+            <Picker x:Name="AgentPicker"
+                Title="Sélectionner un agent (optionnel)"
+                ItemDisplayBinding="{Binding IdUserNavigation.Username}"/>
 
             <!-- Bouton -->
             <Button Text="Ajouter l'événement"

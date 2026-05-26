@@ -154,5 +154,28 @@ namespace ImmoApp.BLL.Services
                 return query.ToList();
             }
         }
+
+        public int GetCountByStatus(int idStatus)
+        {
+            using (var context = new ImmoDbContext())
+            {
+                return context.EstateStatusHistories
+                    .Where(s => s.IdStatusOffer == idStatus && s.DateEnd == null)
+                    .Count();
+            }
+        }
+
+        public List<RealEstate> GetLastRealEstates()
+        {
+            using (var context = new ImmoDbContext())
+            {
+                return context.RealEstates
+                    .Include(r => r.IdTypeEstateNavigation)
+                    .Include(r => r.EstateImages)
+                    .OrderByDescending(r => r.CreationDate)
+                    .Take(5)
+                    .ToList();
+            }
+        }
     }
 }

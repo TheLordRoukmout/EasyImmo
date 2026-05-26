@@ -19,12 +19,12 @@
         <Tab Title="Calendar">
             <ShellContent ContentTemplate="{DataTemplate views:CalendarPage}"/>
         </Tab>
-        <Tab Title="Mail">
+        <!--<Tab Title="Mail">
             <ShellContent ContentTemplate="{DataTemplate views:MailBoxPage}"/>
-        </Tab>
-        <Tab Title="Profil">
+        </Tab> -->
+        <!--<Tab Title="Profil">
             <ShellContent ContentTemplate="{DataTemplate views:ProfilePage}"/>
-        </Tab>
+        </Tab> -->
     </TabBar>
 
 </Shell>

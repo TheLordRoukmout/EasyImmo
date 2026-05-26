@@ -9,6 +9,8 @@ public partial class AddEventPage : ContentPage
     private readonly ClientService _clientService;
     private readonly TypeEventService _typeEventService;
     private readonly int _idEstate;
+    private readonly AgentService _agentService;
+
 
     public AddEventPage(int idEstate)
     {
@@ -16,6 +18,7 @@ public partial class AddEventPage : ContentPage
         _eventService = new EventService();
         _clientService = new ClientService();
         _typeEventService = new TypeEventService();
+        _agentService = new AgentService();
         _idEstate = idEstate;
         LoadPickers();
     }
@@ -24,6 +27,7 @@ public partial class AddEventPage : ContentPage
     {
         TypeEventPicker.ItemsSource = _typeEventService.GetAllTypeEvents();
         ClientPicker.ItemsSource = _clientService.GetAllClients();
+        AgentPicker.ItemsSource = _agentService.GetAllAgents();
     }
 
     private async void OnAddEventClicked(object sender, EventArgs e)
@@ -32,6 +36,7 @@ public partial class AddEventPage : ContentPage
         {
             var selectedType = TypeEventPicker.SelectedItem as TypeEvent;
             var selectedClient = ClientPicker.SelectedItem as Client;
+            var selectedAgent = AgentPicker.SelectedItem as Agent;
 
             if (selectedType == null)
             {
@@ -50,7 +55,8 @@ public partial class AddEventPage : ContentPage
                 EventDatePicker.Date,
                 NotesEditor.Text,
                 selectedClient.IdClient,
-                RoleEntry.Text
+                RoleEntry.Text,
+                selectedAgent?.IdAgent
             );
 
             await DisplayAlert("Succès", "Événement ajouté avec succès !", "OK");

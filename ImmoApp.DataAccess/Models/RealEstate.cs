@@ -42,4 +42,6 @@ public partial class RealEstate
     public virtual TypeEstate IdTypeEstateNavigation { get; set; } = null!;
 
     public virtual ICollection<EstateImage> EstateImages { get; set; } = new List<EstateImage>();
+
+    public virtual ICollection<EstateDocument> EstateDocuments { get; set; } = new List<EstateDocument>();
 }

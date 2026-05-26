@@ -41,6 +41,8 @@ public partial class ImmoDbContext : DbContext
 
     public virtual DbSet<EstateImage> EstateImages { get; set; }
 
+    public virtual DbSet<EstateDocument> EstateDocuments { get; set; }
+
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -199,6 +201,14 @@ public partial class ImmoDbContext : DbContext
                 .HasForeignKey(d => d.IdTypeEvent)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Event__id_typeEv__5441852A");
+
+            entity.Property(e => e.IdAgent).HasColumnName("id_agent");
+
+            entity.HasOne(d => d.IdAgentNavigation)
+                .WithMany(p => p.Events)
+                .HasForeignKey(d => d.IdAgent)
+                .OnDelete(DeleteBehavior.SetNull)
+                .HasConstraintName("FK__Event__id_agent");
         });
 
         modelBuilder.Entity<RealEstate>(entity =>
@@ -347,6 +357,23 @@ public partial class ImmoDbContext : DbContext
                 .HasForeignKey(d => d.IdEstate)
                 .HasConstraintName("FK__Estate_Im__id_es__6FE99F9F");
         });
+
+        modelBuilder.Entity<EstateDocument>(entity =>
+        {
+            entity.HasKey(e => e.IdDocument).HasName("PK__Estate_D__");
+            entity.ToTable("Estate_Documents");
+            entity.Property(e => e.IdDocument).HasColumnName("id_document");
+            entity.Property(e => e.IdEstate).HasColumnName("id_estate");
+            entity.Property(e => e.DocumentName).HasMaxLength(255).HasColumnName("document_name");
+            entity.Property(e => e.DocumentPath).HasMaxLength(500).HasColumnName("document_path");
+            entity.Property(e => e.UploadDate).HasDefaultValueSql("(getdate())").HasColumnType("datetime").HasColumnName("upload_date");
+
+            entity.HasOne(d => d.IdEstateNavigation)
+                .WithMany(p => p.EstateDocuments)
+                .HasForeignKey(d => d.IdEstate)
+                .HasConstraintName("FK__Estate_Do__id_es__160F4887");
+        });
+
 
         OnModelCreatingPartial(modelBuilder);
     }

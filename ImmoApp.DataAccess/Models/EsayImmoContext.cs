@@ -15,7 +15,7 @@ public partial class EsayImmoContext : DbContext
     {
     }
 
-    public virtual DbSet<EstateImage> EstateImages { get; set; }
+    public virtual DbSet<EstateDocument> EstateDocuments { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -23,20 +23,24 @@ public partial class EsayImmoContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<EstateImage>(entity =>
+        modelBuilder.Entity<EstateDocument>(entity =>
         {
-            entity.HasKey(e => e.IdImage).HasName("PK__Estate_I__C28C621C82125642");
+            entity.HasKey(e => e.IdDocument).HasName("PK__Estate_D__D5F2A16F0E21B6B4");
 
-            entity.ToTable("Estate_Images");
+            entity.ToTable("Estate_Documents");
 
-            entity.Property(e => e.IdImage).HasColumnName("id_image");
-            entity.Property(e => e.IdEstate).HasColumnName("id_estate");
-            entity.Property(e => e.ImagePath)
+            entity.Property(e => e.IdDocument).HasColumnName("id_document");
+            entity.Property(e => e.DocumentName)
+                .HasMaxLength(255)
+                .HasColumnName("document_name");
+            entity.Property(e => e.DocumentPath)
                 .HasMaxLength(500)
-                .HasColumnName("image_path");
-            entity.Property(e => e.IsMain)
-                .HasDefaultValue(false)
-                .HasColumnName("is_main");
+                .HasColumnName("document_path");
+            entity.Property(e => e.IdEstate).HasColumnName("id_estate");
+            entity.Property(e => e.UploadDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("upload_date");
         });
 
         OnModelCreatingPartial(modelBuilder);

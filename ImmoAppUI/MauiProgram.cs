@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
+
 namespace ImmoAppUI
 {
     public static class MauiProgram

@@ -31,7 +31,8 @@ public partial class RealEstate
 
     public string? MainImagePath => EstateImages
     .FirstOrDefault(i => i.IsMain == true)?.ImagePath
-    ?? EstateImages.FirstOrDefault()?.ImagePath;
+    ?? EstateImages.FirstOrDefault()?.ImagePath
+    ?? "no_image.jpg";
 
     public virtual ICollection<EstateStatusHistory> EstateStatusHistories { get; set; } = new List<EstateStatusHistory>();
 

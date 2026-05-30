@@ -4,7 +4,15 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:ImmoAppUI.Views"
-    Title="EasyImmo">
+    Title="EasyImmo"
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarBackgroundColor="White"
+    Shell.TabBarForegroundColor="#71B73F"
+    Shell.TabBarTitleColor="#71B73F"
+    Shell.TabBarUnselectedColor="#AAAAAA"
+    Shell.TabBarDisabledColor="#CCCCCC">
+    
+    
 
     <TabBar>
         <Tab Title="Dashboard">

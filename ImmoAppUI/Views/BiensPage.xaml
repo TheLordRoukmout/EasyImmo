@@ -7,55 +7,65 @@
     <Grid ColumnDefinitions="260, *" Padding="10" ColumnSpacing="10">
 
         <!-- COLONNE GAUCHE : Filtres -->
-        <VerticalStackLayout Grid.Column="0" Spacing="15" Padding="10">
-            <Label Text="FILTRES" FontAttributes="Bold" FontSize="18" TextColor="#71B73F"/>
+        <ScrollView Grid.Column="0">
+            <VerticalStackLayout Spacing="15" Padding="10">
 
-            <!-- Filtre Type -->
-            <Label Text="Type de bien" FontAttributes="Bold"/>
-            <Picker x:Name="TypePicker" 
-                    Title="Tous les types"
-                    ItemDisplayBinding="{Binding Label}"
-                    SelectedIndexChanged="OnTypePickerChanged"/>
+                <Label Text="FILTRES" FontAttributes="Bold" FontSize="18" TextColor="#71B73F"/>
 
-            <!-- Filtre Référence -->
-            <Label Text="Référence" FontAttributes="Bold"/>
-            <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
-                <Entry x:Name="RefEntry" Placeholder="Réf..." Margin="10,5"/>
-            </Border>
+                <!-- Filtre Type -->
+                <Label Text="Type de bien" FontAttributes="Bold"/>
+                <Picker x:Name="TypePicker" 
+                Title="Tous les types"
+                ItemDisplayBinding="{Binding Label}"
+                SelectedIndexChanged="OnTypePickerChanged"/>
 
-            <!-- Filtre Prix max -->
-            <Label Text="Prix maximum (€)" FontAttributes="Bold"/>
-            <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
-                <Entry x:Name="PriceEntry" Placeholder="Ex: 500000" Keyboard="Numeric" Margin="10,5"/>
-            </Border>
+                <!-- Filtre Statut -->
+                <Label Text="Statut" FontAttributes="Bold"/>
+                <Picker x:Name="StatusPicker"
+                Title="Tous les statuts"
+                ItemDisplayBinding="{Binding Label}"
+                SelectedIndexChanged="OnStatusPickerChanged"/>
 
-            <!-- Filtre Localité -->
-            <Label Text="Localité" FontAttributes="Bold"/>
-            <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
-                <Entry x:Name="CityEntry" Placeholder="Ex: Bruxelles" Margin="10,5"/>
-            </Border>
+                <!-- Filtre Référence -->
+                <Label Text="Référence" FontAttributes="Bold"/>
+                <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
+                    <Entry x:Name="RefEntry" Placeholder="Réf..." Margin="10,5"/>
+                </Border>
 
-            <!-- Filtre Surface min -->
-            <Label Text="Surface minimum (m²)" FontAttributes="Bold"/>
-            <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
-                <Entry x:Name="SurfaceEntry" Placeholder="Ex: 100" Keyboard="Numeric" Margin="10,5"/>
-            </Border>
+                <!-- Filtre Prix max -->
+                <Label Text="Prix maximum (€)" FontAttributes="Bold"/>
+                <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
+                    <Entry x:Name="PriceEntry" Placeholder="Ex: 500000" Keyboard="Numeric" Margin="10,5"/>
+                </Border>
 
-            <!-- Bouton Appliquer -->
-            <Button Text="Appliquer"
-                    BackgroundColor="#71B73F"
-                    TextColor="White"
-                    CornerRadius="20"
-                    Clicked="OnFilterClicked"/>
+                <!-- Filtre Localité -->
+                <Label Text="Localité" FontAttributes="Bold"/>
+                <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
+                    <Entry x:Name="CityEntry" Placeholder="Ex: Bruxelles" Margin="10,5"/>
+                </Border>
 
-            <!-- Bouton Reset -->
-            <Button Text="Réinitialiser"
-                    BackgroundColor="#CCCCCC"
-                    TextColor="White"
-                    CornerRadius="20"
-                    Clicked="OnResetClicked"/>
+                <!-- Filtre Surface min -->
+                <Label Text="Surface minimum (m²)" FontAttributes="Bold"/>
+                <Border StrokeShape="RoundRectangle 20" Stroke="#CCCCCC">
+                    <Entry x:Name="SurfaceEntry" Placeholder="Ex: 100" Keyboard="Numeric" Margin="10,5"/>
+                </Border>
 
-        </VerticalStackLayout>
+                <!-- Bouton Appliquer -->
+                <Button Text="Appliquer"
+                BackgroundColor="#71B73F"
+                TextColor="White"
+                CornerRadius="20"
+                Clicked="OnFilterClicked"/>
+
+                <!-- Bouton Reset -->
+                <Button Text="Réinitialiser"
+                BackgroundColor="#CCCCCC"
+                TextColor="White"
+                CornerRadius="20"
+                Clicked="OnResetClicked"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
 
         <!-- COLONNE DROITE : Grille de cartes -->
         <Grid Grid.Column="1">

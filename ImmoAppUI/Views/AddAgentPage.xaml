@@ -23,7 +23,7 @@
             <DatePicker x:Name="HireDatePicker"/>
 
             <Button Text="Créer l'agent"
-                    BackgroundColor="#42A5F5"
+                    BackgroundColor="#71B73F"
                     TextColor="White"
                     Clicked="OnCreateAgentClicked"/>
 

@@ -14,8 +14,9 @@
         <CollectionView Grid.Row="1" ItemsSource="{Binding Agents}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Border BackgroundColor="#E3F2FD" 
+                    <Border BackgroundColor="White" 
                             StrokeShape="RoundRectangle 10"
+                            Stroke="#71B73F"
                             Margin="0,5" Padding="15">
                         <Grid ColumnDefinitions="*, Auto, Auto">
                             <VerticalStackLayout Grid.Column="0">
@@ -39,7 +40,7 @@
 
         <!-- Bouton Ajouter -->
         <Button Grid.Row="2" Text="+ Ajouter un agent"
-                BackgroundColor="#42A5F5"
+                BackgroundColor="#71B73F"
                 TextColor="White"
                 Clicked="OnAddAgentClicked"/>
 

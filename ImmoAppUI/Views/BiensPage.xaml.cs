@@ -8,11 +8,13 @@ public partial class BiensPage : ContentPage
 {
     private RealEstateViewModel _viewModel;
     private readonly TypeEstateService _typeEstateService;
+    private readonly TypeStatusOfferService _typeStatusOfferService;
 
     public BiensPage()
     {
         InitializeComponent();
         _typeEstateService = new TypeEstateService();
+        _typeStatusOfferService = new TypeStatusOfferService();
         _viewModel = new RealEstateViewModel();
         BindingContext = _viewModel;
         LoadTypePicker();
@@ -26,13 +28,17 @@ public partial class BiensPage : ContentPage
 
     private void LoadTypePicker()
     {
-        var types = _typeEstateService.GetAllTypeEstates();
-        TypePicker.ItemsSource = types;
+        TypePicker.ItemsSource = _typeEstateService.GetAllTypeEstates();
+        StatusPicker.ItemsSource = _typeStatusOfferService.GetAllTypeStatusOffers();
     }
 
     private void OnTypePickerChanged(object sender, EventArgs e)
     {
-        // Se déclenche quand on change le type ? on applique le filtre automatiquement
+        ApplyFilters();
+    }
+
+    private void OnStatusPickerChanged(object sender, EventArgs e)
+    {
         ApplyFilters();
     }
 
@@ -44,6 +50,7 @@ public partial class BiensPage : ContentPage
     private void OnResetClicked(object sender, EventArgs e)
     {
         TypePicker.SelectedIndex = -1;
+        StatusPicker.SelectedIndex = -1;
         RefEntry.Text = string.Empty;
         PriceEntry.Text = string.Empty;
         CityEntry.Text = string.Empty;
@@ -54,7 +61,9 @@ public partial class BiensPage : ContentPage
     private void ApplyFilters()
     {
         var selectedType = TypePicker.SelectedItem as TypeEstate;
+        var selectedStatus = StatusPicker.SelectedItem as TypeStatusOffer;
         int? idType = selectedType?.IdTypeEstate;
+        int? idStatus = selectedStatus?.IdStatusOffer;
         decimal? maxPrice = decimal.TryParse(PriceEntry.Text, out decimal p) ? p : null;
         decimal? minSurface = decimal.TryParse(SurfaceEntry.Text, out decimal s) ? s : null;
 
@@ -63,7 +72,8 @@ public partial class BiensPage : ContentPage
             RefEntry.Text,
             CityEntry.Text,
             maxPrice,
-            minSurface
+            minSurface,
+            idStatus
         );
     }
 

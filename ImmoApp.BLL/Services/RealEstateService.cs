@@ -130,7 +130,7 @@ namespace ImmoApp.BLL.Services
             }
         }
 
-        public List<RealEstate> FilterRealEstates(int? idType, string? reference, string? city, decimal? maxPrice, decimal? minSurface)
+        public List<RealEstate> FilterRealEstates(int? idType, string? reference, string? city, decimal? maxPrice, decimal? minSurface, int? idStatus = null)
         {
             using (var context = new ImmoDbContext())
             {
@@ -150,6 +150,9 @@ namespace ImmoApp.BLL.Services
                     query = query.Where(r => r.Price <= maxPrice.Value);
                 if (minSurface.HasValue)
                     query = query.Where(r => r.Surface >= minSurface.Value);
+                if (idStatus.HasValue)
+                    query = query.Where(r => r.EstateStatusHistories
+                        .Any(s => s.IdStatusOffer == idStatus.Value && s.DateEnd == null));
 
                 return query.ToList();
             }

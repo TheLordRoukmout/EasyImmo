@@ -1,0 +1,15 @@
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\bin\Debug\net8.0\ImmoApp.BLL.deps.json
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\bin\Debug\net8.0\ImmoApp.BLL.dll
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\bin\Debug\net8.0\ImmoApp.BLL.pdb
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\bin\Debug\net8.0\ImmoApp.DataAccess.dll
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\bin\Debug\net8.0\ImmoApp.DataAccess.pdb
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\obj\Debug\net8.0\ImmoApp.BLL.csproj.AssemblyReference.cache
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\obj\Debug\net8.0\ImmoApp.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\obj\Debug\net8.0\ImmoApp.BLL.AssemblyInfoInputs.cache
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\obj\Debug\net8.0\ImmoApp.BLL.AssemblyInfo.cs
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\obj\Debug\net8.0\ImmoApp.BLL.csproj.CoreCompileInputs.cache
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\obj\Debug\net8.0\ImmoApp..483C6F3A.Up2Date
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\obj\Debug\net8.0\ImmoApp.BLL.dll
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\obj\Debug\net8.0\refint\ImmoApp.BLL.dll
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\obj\Debug\net8.0\ImmoApp.BLL.pdb
+C:\Users\dymit\Documents\Esa_prj\pgbd\Project EasyImmo\ImmoApp.BLL\obj\Debug\net8.0\ref\ImmoApp.BLL.dll

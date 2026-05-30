@@ -13,38 +13,38 @@
         <HorizontalStackLayout Grid.Row="1" Spacing="20">
 
             <!-- Carte Agents -->
-            <Border BackgroundColor="#E3F2FD" 
+            <Border BackgroundColor="#71B73F" 
                     StrokeShape="RoundRectangle 10"
                     WidthRequest="200" HeightRequest="200">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnAgentsTapped"/>
                 </Border.GestureRecognizers>
                 <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                    <Label Text="Agents" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="Agents" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
                 </VerticalStackLayout>
             </Border>
 
             <!-- Carte Clients -->
-            <Border BackgroundColor="#E8F5E9" 
+            <Border BackgroundColor="#71B73F" 
                     StrokeShape="RoundRectangle 10"
                     WidthRequest="200" HeightRequest="200">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnClientsTapped"/>
                 </Border.GestureRecognizers>
                 <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                    <Label Text="Clients" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="Clients" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
                 </VerticalStackLayout>
             </Border>
 
             <!-- Carte Documents -->
-            <Border BackgroundColor="#FFF3E0" 
+            <Border BackgroundColor="#71B73F" 
                     StrokeShape="RoundRectangle 10"
                     WidthRequest="200" HeightRequest="200">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnDocumentsTapped"/>
                 </Border.GestureRecognizers>
                 <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                    <Label Text="Documents" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="Documents" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
                 </VerticalStackLayout>
             </Border>
 

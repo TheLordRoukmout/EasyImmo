@@ -48,11 +48,10 @@ namespace ImmoAppUI.ViewModels
             RealEstates = new ObservableCollection<RealEstate>(_realEstateService.SearchRealEstates(query));
         }
 
-        public void FilterRealEstates(int? idType, string? reference, string? city, decimal? maxPrice, decimal? minSurface)
+        public void FilterRealEstates(int? idType, string? reference, string? city, decimal? maxPrice, decimal? minSurface, int? idStatus = null)
         {
-            _realEstateService.FilterRealEstates(idType, reference, city, maxPrice, minSurface);
             RealEstates = new ObservableCollection<RealEstate>(
-                _realEstateService.FilterRealEstates(idType, reference, city, maxPrice, minSurface));
+                _realEstateService.FilterRealEstates(idType, reference, city, maxPrice, minSurface, idStatus));
         }
     }
 }

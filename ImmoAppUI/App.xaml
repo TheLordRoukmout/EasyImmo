@@ -5,6 +5,7 @@
              x:Class="ImmoAppUI.App">
     <Application.Resources>
         <ResourceDictionary>
+            <Color x:Key="PageBackgroundColor">White</Color>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />

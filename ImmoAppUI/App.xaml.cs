@@ -7,6 +7,8 @@
             InitializeComponent();
 
             MainPage = new AppShell();
+            Microsoft.Maui.Controls.Application.Current!.UserAppTheme = AppTheme.Light;
+
         }
     }
 }
